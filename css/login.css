@@ -1,0 +1,411 @@
+body, ul, li, ol, p, dl, dd, h1, h2, h3, h4, h5, h6, img, iframe, form, div {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+input {
+  outline: none;
+  border: none; }
+
+em {
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+body {
+  font-size: 12px;
+  color: #666;
+  background: #f7f7f7; }
+
+.public {
+  display: inline-block;
+  background: url(../img/public4.png) no-repeat; }
+
+header {
+  width: 100%;
+  height: 88px;
+  background: #fff;
+  box-shadow: 1px 2px 6px #e1e1e1; }
+  header .header_in {
+    width: 1000px;
+    height: 88px;
+    margin: 0 auto; }
+    header .header_in .h_left {
+      height: 63px;
+      margin-top: 15px;
+      width: 257px; }
+    header .header_in .h_right {
+      width: 250px;
+      margin-top: 48px;
+      color: #999;
+      height: 14px;
+      line-height: 14px; }
+      header .header_in .h_right .wel a {
+        color: #0066cc;
+        margin-left: 20px; }
+        header .header_in .h_right .wel a:hover {
+          text-decoration: underline; }
+      header .header_in .h_right .help {
+        position: relative;
+        width: 77px;
+        height: 14px;
+        z-index: 2; }
+        header .header_in .h_right .help:hover .show {
+          display: block; }
+        header .header_in .h_right .help a {
+          display: block;
+          float: left;
+          margin-right: 6px; }
+        header .header_in .h_right .help i {
+          background-position: -23px 0;
+          width: 15px;
+          height: 14px; }
+        header .header_in .h_right .help .show {
+          position: absolute;
+          left: -11px;
+          top: -7px;
+          width: 85px;
+          border: 1px solid #ccc;
+          z-index: 1;
+          overflow: hidden;
+          display: none; }
+          header .header_in .h_right .help .show a {
+            display: block;
+            border-top: 1px dotted #ccc;
+            padding-left: 10px;
+            height: 24px;
+            width: 75px;
+            color: #999;
+            line-height: 24px;
+            background: #fff; }
+          header .header_in .h_right .help .show .first {
+            background: transparent;
+            border-top: none; }
+
+section {
+  width: 100%;
+  padding: 0 0 50px;
+  height: 600px;
+  background: url(../img/bg04.jpg) no-repeat center top; }
+  section .section_in {
+    width: 1000px;
+    margin: 0 auto; }
+    section .section_in .outsbox {
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+      width: 350px;
+      height: 405px;
+      top: 100px;
+      left: 650px; }
+      section .section_in .outsbox .link {
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        cursor: pointer; }
+        section .section_in .outsbox .link .e {
+          width: 65px;
+          height: 65px; }
+        section .section_in .outsbox .link .e1 {
+          background-position: -80px -230px; }
+        section .section_in .outsbox .link .e2 {
+          background-position: 0 -230px; }
+      section .section_in .outsbox .formbox {
+        width: 270px;
+        margin-left: 40px;
+        display: block; }
+        section .section_in .outsbox .formbox .titbox {
+          margin: 14px 0 19px;
+          height: 40px;
+          overflow: hidden;
+          line-height: 40px;
+          border-bottom: 1px solid #e9e9e9; }
+          section .section_in .outsbox .formbox .titbox a {
+            float: left;
+            display: inline-block;
+            color: #999;
+            font-size: 16px; }
+            section .section_in .outsbox .formbox .titbox a:hover {
+              text-decoration: underline; }
+          section .section_in .outsbox .formbox .titbox .show {
+            color: #e4393c;
+            font-weight: bold; }
+          section .section_in .outsbox .formbox .titbox .hide:hover {
+            color: #0066cc; }
+          section .section_in .outsbox .formbox .titbox b {
+            float: left;
+            display: inline-block;
+            color: #999;
+            font-size: 12px;
+            padding: 0 18px;
+            font-weight: normal; }
+        section .section_in .outsbox .formbox .conbox {
+          height: 267px;
+          border-bottom: 1px dotted #ccc;
+          overflow: hidden; }
+          section .section_in .outsbox .formbox .conbox .inputbox {
+            width: 270px;
+            height: 42px;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 20px; }
+            section .section_in .outsbox .formbox .conbox .inputbox .boxle {
+              width: 43px;
+              height: 42px;
+              position: absolute;
+              top: 0;
+              left: 0; }
+              section .section_in .outsbox .formbox .conbox .inputbox .boxle em {
+                display: inline-block;
+                width: 43px;
+                height: 40px;
+                background: #f3f3f3;
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                border-right: 1px solid #dcdcdc; }
+                section .section_in .outsbox .formbox .conbox .inputbox .boxle em .u {
+                  width: 20px;
+                  height: 20px;
+                  margin: 10px 10px 0 11px; }
+                section .section_in .outsbox .formbox .conbox .inputbox .boxle em .u1 {
+                  background-position: -51px 0; }
+                section .section_in .outsbox .formbox .conbox .inputbox .boxle em .u2 {
+                  background-position: -83px 0; }
+                section .section_in .outsbox .formbox .conbox .inputbox .boxle em .u3 {
+                  background-position: -426px 0; }
+                section .section_in .outsbox .formbox .conbox .inputbox .boxle em .u4 {
+                  background-position: -262px -2px; }
+              section .section_in .outsbox .formbox .conbox .inputbox .boxle p {
+                font-size: 16px;
+                margin-top: 11px;
+                color: #ccc;
+                width: 200px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-left: 55px; }
+              section .section_in .outsbox .formbox .conbox .inputbox .boxle img {
+                position: absolute;
+                left: 189px;
+                top: 1px; }
+              section .section_in .outsbox .formbox .conbox .inputbox .boxle .n {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                position: absolute;
+                top: 14px;
+                left: 248px;
+                display: none;
+                background-position: -486px -42px; }
+              section .section_in .outsbox .formbox .conbox .inputbox .boxle .l {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                left: 246px;
+                top: 15px;
+                display: none;
+                background-position: -162px 0; }
+            section .section_in .outsbox .formbox .conbox .inputbox input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 173px;
+              height: 40px;
+              line-height: 40px;
+              padding: 0 45px 0 50px;
+              color: #999;
+              border: 1px solid #dcdcdc;
+              font-size: 16px;
+              background: none;
+              font-weight: 700; }
+            section .section_in .outsbox .formbox .conbox .inputbox .sub {
+              width: 270px;
+              background-color: #e10303;
+              color: #fff;
+              border-radius: 2px;
+              border: 0;
+              cursor: pointer; }
+            section .section_in .outsbox .formbox .conbox .inputbox .checkt {
+              width: 13px;
+              height: auto;
+              border: none;
+              line-height: 40px;
+              color: #999;
+              font-size: 16px;
+              vertical-align: middle; }
+            section .section_in .outsbox .formbox .conbox .inputbox .extem {
+              padding-bottom: 10px;
+              margin-top: -7px;
+              color: #999; }
+            section .section_in .outsbox .formbox .conbox .inputbox .mesag {
+              width: 48px;
+              padding-left: 54px; }
+            section .section_in .outsbox .formbox .conbox .inputbox a {
+              float: right;
+              display: inline-block;
+              color: #999; }
+              section .section_in .outsbox .formbox .conbox .inputbox a:hover {
+                text-decoration: underline; }
+            section .section_in .outsbox .formbox .conbox .inputbox .blue {
+              color: #0066cc;
+              padding-left: 13px; }
+            section .section_in .outsbox .formbox .conbox .inputbox .on {
+              border: 1px solid #ff6666; }
+            section .section_in .outsbox .formbox .conbox .inputbox .blank {
+              display: block;
+              padding: 0 10px;
+              height: 20px;
+              color: #fff;
+              line-height: 20px;
+              position: absolute;
+              bottom: -15px;
+              right: 0;
+              background: #ed787f;
+              display: none; }
+            section .section_in .outsbox .formbox .conbox .inputbox .mesa {
+              float: right;
+              display: inline-block;
+              width: 116px;
+              height: 40px;
+              line-height: 40px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              border: 1px solid #ccc;
+              background-color: #eaeaea;
+              border-radius: 3px;
+              text-align: center;
+              color: #666; }
+              section .section_in .outsbox .formbox .conbox .inputbox .mesa:hover {
+                text-decoration: none; }
+        section .section_in .outsbox .formbox .one {
+          display: block; }
+        section .section_in .outsbox .formbox .two {
+          display: none; }
+        section .section_in .outsbox .formbox .coopbox {
+          width: 320px; }
+          section .section_in .outsbox .formbox .coopbox p {
+            margin: 22px 15px 0 0;
+            float: left;
+            color: #999; }
+          section .section_in .outsbox .formbox .coopbox div {
+            width: 243px;
+            height: 42px;
+            margin: 0 auto; }
+            section .section_in .outsbox .formbox .coopbox div a .q {
+              display: inline-block;
+              float: left;
+              width: 30px;
+              height: 30px;
+              margin-top: 16px;
+              margin-left: 12px; }
+            section .section_in .outsbox .formbox .coopbox div a .q1 {
+              background-position: 0 -35px;
+              margin-left: 0; }
+            section .section_in .outsbox .formbox .coopbox div a .q2 {
+              background-position: -51px -35px; }
+            section .section_in .outsbox .formbox .coopbox div a .q3 {
+              background-position: -102px -35px; }
+            section .section_in .outsbox .formbox .coopbox div a .q4 {
+              background-position: -153px -35px; }
+            section .section_in .outsbox .formbox .coopbox div a:hover .q1 {
+              background-position: 0 -86px;
+              margin-left: 0; }
+            section .section_in .outsbox .formbox .coopbox div a:hover .q2 {
+              background-position: -51px -86px; }
+            section .section_in .outsbox .formbox .coopbox div a:hover .q3 {
+              background-position: -102px -86px; }
+            section .section_in .outsbox .formbox .coopbox div a:hover .q4 {
+              background-position: -153px -86px; }
+      section .section_in .outsbox .ewmbox {
+        display: none;
+        width: 270px;
+        margin-left: 40px; }
+        section .section_in .outsbox .ewmbox h2 {
+          height: 70px;
+          line-height: 70px;
+          font-size: 16px;
+          color: #666; }
+        section .section_in .outsbox .ewmbox .cont {
+          text-align: center;
+          position: relative; }
+          section .section_in .outsbox .ewmbox .cont .boximg {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto 40px;
+            position: relative;
+            overflow: hidden; }
+            section .section_in .outsbox .ewmbox .cont .boximg img {
+              width: 150px;
+              height: 150px;
+              display: block;
+              float: left; }
+          section .section_in .outsbox .ewmbox .cont .saoma .m {
+            display: block;
+            float: left;
+            background-position: -270px -150px;
+            width: 33px;
+            height: 33px;
+            margin: 1px 10px 0 65px; }
+          section .section_in .outsbox .ewmbox .cont .saoma p {
+            float: left;
+            color: #999;
+            line-height: 16px;
+            text-align: left; }
+            section .section_in .outsbox .ewmbox .cont .saoma p em {
+              color: #e4393c;
+              font-style: normal; }
+        section .section_in .outsbox .ewmbox .ewmbot {
+          padding-top: 50px;
+          text-align: right; }
+          section .section_in .outsbox .ewmbox .ewmbot span {
+            text-align: right; }
+            section .section_in .outsbox .ewmbox .ewmbot span a {
+              padding-left: 10px;
+              color: #333; }
+              section .section_in .outsbox .ewmbox .ewmbot span a:hover {
+                text-decoration: underline; }
+
+footer {
+  width: 100%;
+  padding: 10px 0 0;
+  height: 90px; }
+  footer .footer_in {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center; }
+    footer .footer_in p {
+      line-height: 30px;
+      color: #333; }
+    footer .footer_in .on {
+      color: #ff0000; }

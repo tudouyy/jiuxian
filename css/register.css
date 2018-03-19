@@ -1,0 +1,299 @@
+body, ul, li, ol, p, dl, dd, h1, h2, h3, h4, h5, h6, img, iframe, form, div {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+input {
+  outline: none;
+  border: none; }
+
+em {
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+body {
+  font-size: 12px;
+  color: #666;
+  background: #f7f7f7; }
+
+.public {
+  display: inline-block;
+  background: url(../img/public4.png) no-repeat; }
+
+header {
+  width: 100%;
+  height: 88px;
+  background: #fff;
+  box-shadow: 1px 2px 6px #e1e1e1; }
+  header .header_in {
+    width: 1000px;
+    height: 88px;
+    margin: 0 auto; }
+    header .header_in .h_left {
+      height: 63px;
+      margin-top: 15px;
+      width: 257px; }
+    header .header_in .h_right {
+      width: 250px;
+      margin-top: 48px;
+      color: #999;
+      height: 14px;
+      line-height: 14px; }
+      header .header_in .h_right .wel a {
+        color: #0066cc;
+        margin-left: 20px; }
+        header .header_in .h_right .wel a:hover {
+          text-decoration: underline; }
+      header .header_in .h_right .help {
+        position: relative;
+        width: 77px;
+        height: 14px;
+        z-index: 2; }
+        header .header_in .h_right .help:hover .show {
+          display: block; }
+        header .header_in .h_right .help a {
+          display: block;
+          float: left;
+          margin-right: 6px; }
+        header .header_in .h_right .help i {
+          background-position: -23px 0;
+          width: 15px;
+          height: 14px; }
+        header .header_in .h_right .help .show {
+          position: absolute;
+          left: -11px;
+          top: -7px;
+          width: 85px;
+          border: 1px solid #ccc;
+          z-index: 1;
+          overflow: hidden;
+          display: none; }
+          header .header_in .h_right .help .show a {
+            display: block;
+            border-top: 1px dotted #ccc;
+            padding-left: 10px;
+            height: 24px;
+            width: 75px;
+            color: #999;
+            line-height: 24px;
+            background: #fff; }
+          header .header_in .h_right .help .show .first {
+            background: transparent;
+            border-top: none; }
+
+section {
+  width: 100%;
+  padding: 0 0 50px;
+  height: 600px;
+  background: url(../img/bg03.jpg) repeat-x scroll left top;
+  padding-top: 70px; }
+  section .sectoin_in {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border: 3px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 1px 6px 11px #e4e4e4;
+    height: 500px;
+    position: relative; }
+    section .sectoin_in .top {
+      position: absolute;
+      width: 280px;
+      height: 34px;
+      position: absolute;
+      right: 15px;
+      top: -37px; }
+      section .sectoin_in .top a {
+        display: block;
+        float: right;
+        width: 84px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px;
+        font-size: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-left: 6px;
+        vertical-align: top;
+        background: #ff9900;
+        color: #fff;
+        border: 2px solid #eaeaea;
+        border-bottom: 3px solid #eaeaea; }
+      section .sectoin_in .top .on {
+        height: 35px;
+        color: #ff9900;
+        border-bottom: none;
+        margin-bottom: -3px;
+        background: #fff;
+        color: #ff9900; }
+    section .sectoin_in .cont {
+      height: 500px;
+      width: 994px;
+      overflow: hidden; }
+      section .sectoin_in .cont form {
+        width: 784px;
+        padding: 55px 0 0 125px;
+        float: left; }
+        section .sectoin_in .cont form .list {
+          margin-top: 15px; }
+          section .sectoin_in .cont form .list .worbox {
+            width: 230px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            padding-right: 30px;
+            float: left; }
+          section .sectoin_in .cont form .list .regbox {
+            height: 42px;
+            width: 302px;
+            position: relative; }
+            section .sectoin_in .cont form .list .regbox input {
+              width: 255px;
+              padding-left: 45px;
+              height: 40px;
+              line-height: 40px;
+              color: #999;
+              border: 1px solid #dcdcdc;
+              font-size: 16px; }
+            section .sectoin_in .cont form .list .regbox .chetwo {
+              width: 101px;
+              padding-left: 45px;
+              position: relative; }
+            section .sectoin_in .cont form .list .regbox .sub {
+              height: 42px;
+              line-height: 42px;
+              width: 302px;
+              padding: 0;
+              font-size: 18px;
+              color: #fff;
+              border-radius: 2px;
+              background: #e10303;
+              cursor: pointer;
+              border: none; }
+            section .sectoin_in .cont form .list .regbox .checks {
+              width: 13px;
+              height: auto;
+              border: none;
+              line-height: 40px;
+              color: #999;
+              font-size: 16px;
+              vertical-align: middle; }
+            section .sectoin_in .cont form .list .regbox .on {
+              border: 1px solid #ff6666; }
+            section .sectoin_in .cont form .list .regbox .p {
+              height: 26px;
+              width: 26px;
+              position: absolute;
+              left: 12px;
+              top: 9px; }
+            section .sectoin_in .cont form .list .regbox .p1 {
+              background-position: -48px 2px; }
+            section .sectoin_in .cont form .list .regbox .p2 {
+              background-position: -422px 2px; }
+            section .sectoin_in .cont form .list .regbox .p3 {
+              background-position: -259px 1px; }
+            section .sectoin_in .cont form .list .regbox .p4 {
+              background-position: -77px 2px; }
+            section .sectoin_in .cont form .list .regbox .l {
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              top: 14px;
+              right: 10px;
+              display: none; }
+            section .sectoin_in .cont form .list .regbox .l1, section .sectoin_in .cont form .list .regbox .l4, section .sectoin_in .cont form .list .regbox .l6 {
+              background-position: -162px 0; }
+            section .sectoin_in .cont form .list .regbox .l2, section .sectoin_in .cont form .list .regbox .l5, section .sectoin_in .cont form .list .regbox .l7 {
+              background-position: -139px 0; }
+            section .sectoin_in .cont form .list .regbox .l3 {
+              right: 165px;
+              background-position: -162px 0; }
+            section .sectoin_in .cont form .list .regbox img {
+              display: block;
+              width: 80px;
+              height: 40px;
+              position: absolute;
+              top: 3px;
+              right: 3px; }
+            section .sectoin_in .cont form .list .regbox span {
+              display: inline-block;
+              height: 20px;
+              line-height: 20px;
+              color: #fff;
+              padding: 0 8px;
+              position: absolute;
+              top: 37px;
+              right: 0px; }
+            section .sectoin_in .cont form .list .regbox .blur, section .sectoin_in .cont form .list .regbox .blur1 {
+              background: #ccc;
+              display: none; }
+            section .sectoin_in .cont form .list .regbox .wrong, section .sectoin_in .cont form .list .regbox .wrong1 {
+              display: none;
+              background: #ed787f; }
+            section .sectoin_in .cont form .list .regbox .clear, section .sectoin_in .cont form .list .regbox .clear1, section .sectoin_in .cont form .list .regbox .clear2, section .sectoin_in .cont form .list .regbox .clear3, section .sectoin_in .cont form .list .regbox .clear4 {
+              display: none;
+              background: #ed787f; }
+            section .sectoin_in .cont form .list .regbox .clear2 {
+              right: 155px; }
+            section .sectoin_in .cont form .list .regbox em {
+              color: #999;
+              margin-left: 5px;
+              margin-top: 12px;
+              vertical-align: middle; }
+            section .sectoin_in .cont form .list .regbox a {
+              color: #0066cc;
+              vertical-align: middle; }
+            section .sectoin_in .cont form .list .regbox P {
+              width: 148px;
+              height: 42px;
+              line-height: 40px;
+              font-size: 12px;
+              text-align: center;
+              position: absolute;
+              top: 0;
+              right: 0;
+              border: 1px solid #ccc;
+              background-color: #eaeaea;
+              cursor: pointer;
+              border-radius: 3px; }
+
+footer {
+  width: 100%;
+  padding: 10px 0 0;
+  height: 90px; }
+  footer .footer_in {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center; }
+    footer .footer_in p {
+      line-height: 30px;
+      color: #333; }
+    footer .footer_in .on {
+      color: #ff0000; }
