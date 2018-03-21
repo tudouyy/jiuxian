@@ -1,0 +1,795 @@
+@charset "utf-8"; 
+@import "common";
+@import "header";
+@import "footer";
+@import "side";
+
+body {
+    color: #666;
+    min-width: 1000px;
+    font-size: 12px;
+    display: block;
+}
+strong,b{
+    font-weight:normal;
+}
+a{
+    &:hover{
+        color: #cc0001;
+        text-decoration: underline;
+    }
+}
+span{
+    vertical-align: top;
+}
+.a_active{
+	color: #cc0001 !important; 
+    text-decoration: underline;
+}
+
+//小图标背景图
+.public{
+	display:inline-block;
+	background: url(../img/public.png) no-repeat;
+} 
+.public2{
+    display:inline-block;
+	background: url(../img/public3.png) no-repeat;
+}
+.public6{
+    display:inline-block;
+    background: url(../img/public6.png) no-repeat;
+}
+.public7{
+    display:inline-block;
+    background: url(../img/public7.png) no-repeat;
+}
+.public8{
+    display:inline-block;
+    background: url(../img/public8.png) no-repeat;
+}
+//小图标中的三角
+.s{
+    display:inline-block;
+    width: 9px;
+    height: 8px; 
+    background-position: -99px 3px;
+}
+//section
+section{
+    background:#fff;
+    .section_in{
+        .nav_left{
+           h2{
+
+            &:hover{
+                .nav_left_ul{
+                    display:block;
+                }
+            }
+            .nav_left_ul{
+                display:none;
+            }
+           }
+        }
+    }
+     .contpic{
+        width:1200px;
+        margin:0 auto;
+        margin-top: 10px;
+        .conleft{
+            width: 200px;
+            .box{
+                width: 198px;
+                height: auto;
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+                overflow: hidden;
+                h3{
+                    color: #666;
+                    font-size: 14px;
+                    padding: 10px 7px;
+                    border-bottom: 1px solid #ddd;
+                    background-color: #fafafa;
+                    font-weight: bold;
+                }
+                .con{
+                    background: #fff;
+                    padding: 10px 0 10px 15px;
+                    .uls1{
+                        li{
+                            width: 198px;
+                            height: 267px;
+                            overflow: hidden;
+                            .aone{
+                                display:block;
+                                width:120px;
+                                height:120px;
+                                text-align: center;
+                                margin-bottom: 5px;
+                                margin-left:22px;
+                                img{
+                                    display:block;
+                                    width: 120px;
+                                    height: 120px;
+                                }
+                            }
+                            .pone{
+                                color: #e90012;
+                                font-weight: bold;
+                                font-size: 14px;
+                                margin-bottom: 10px;
+                                width: 176px;
+                                margin: 0 auto;
+                            }
+                            .atwo{
+                               display: block;
+                                width: 176px;
+                                margin: 0 auto 5px;
+                                height: 36px;
+                                color: #333;
+                                overflow: hidden;
+                                 &:hover{
+                                    color: #cc0001;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .ptwo{
+                                width: 176px;
+                                height: 18px;
+                                margin: 0 auto;
+                                color: #333;
+                                overflow: hidden;
+                                span{
+                                    color: #0087dc;
+                                }
+                            }
+                           
+                        }
+                    }
+                    .uls2{
+                        li{
+                            width: 183px;
+                            height: 26px;
+                            padding-top: 8px;
+                            border-top: 1px dotted #cbcbcb;
+                            margin: 0 auto;
+                            overflow: hidden;
+                             .num{
+                                width: 12px;
+                                height: 12px;
+                                padding: 2px;
+                                border: 1px solid #cdcdcd;
+                                border-radius: 50%;
+                                color: #cdcdcd;
+                                font-size: 10px;
+                                text-align: center;
+                                line-height: 1;
+                                margin-right: 4px;
+                                display: inline-block;
+                            }
+                            .num1{
+                                color: #e33b3b;
+                                border: 1px solid #e33b3b;
+                            }
+                            .name{
+                                width: 155px;
+                                height: 18px;
+                                overflow: hidden;
+                                color: #666;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .conright{
+            width: 990px;
+            height: auto;
+            display: inline-block;
+            .onebox{
+                height: 35px;
+                margin-bottom: 6px;
+                overflow: hidden;
+                .line{
+                    height: 2px;
+                    background-color: #c41921;
+                    font-size: 0;
+                }
+                .onecon{
+                    height: 38px;
+                    line-height: 33px;
+                    overflow: hidden;
+                    .one_right{
+                        display: inline-block;
+                        span{
+                            color: #cf010e;
+                            vertical-align: top;  
+                        }
+                    }
+                    .i{
+                        width: 11px;
+                        height: 11px;
+                        margin: 11px 13px auto 17px;
+                        background-position:0 0;
+                    }
+                    .a1{
+                        color: #333;
+                    }
+                    .j{
+                        width: 8px;
+                        height: 15px;
+                        margin: 9px 20px auto;
+                        background-position:-18px 0;
+                    }
+                    .a2{
+                        color: #ce020d;
+                    }
+                    p{
+                        display: inline-block;
+                        width: 120px;
+                        height: 22px;
+                        border: 1px solid #dcdcdc;
+                        margin-top: 7px;
+                        input{
+                            width: 100px;
+                            height: 22px;
+                            color: #d4d4d4;
+                            line-height: 18px;
+                        }
+                        .q{
+                            width: 15px;
+                            height: 15px;
+                            margin-top: 4px;
+                            margin-left: 2px;
+                            background-position:-30px 0;
+                        }
+                    }
+                }
+            }
+            .twobox{
+                background: #f7f5f5;
+                overflow: hidden;
+                .title{
+                    width: 115px;
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: center;
+                    color: #999;
+                    float: left;
+                    display: inline-block;
+                }
+                .div{
+                    width: 760px;
+                    height: auto;
+                    margin-bottom: 7px;
+                    overflow: hidden;
+                    float: left;
+                    display: inline-block;
+                    a{
+                        height: 18px;
+                        padding-left: 5px;
+                        margin: 7px 8px auto 0;
+                        background: #fff;
+                        border: 1px solid #cf010e;
+                        color: #666;
+                        float: left;
+                        display: inline-block;
+                        overflow: hidden;
+                        span{
+                            vertical-align: top;
+                        }
+                        .a{
+                            width: 16px;
+                            height: 18px;
+                            margin-left: 2px;
+                            background-position:-87px -13px;
+                        }
+                    }
+                }
+                .aa{
+                    width: 115px;
+                    height: 34px;
+                    line-height: 34px;
+                    color: #999;
+                    float: right;
+                    display: inline-block;
+                    i{
+                        width: 11px;
+                        height: 16px;
+                        margin: 8px 8px auto 20px;
+                        background-position:-34px -53px;
+                    }
+                }
+            }
+            .threebox{
+                width: 988px;
+                height: auto;
+                border: 1px solid #eaeaea;
+                background-color: #f6f6f6;
+                position: relative;
+                .threes{
+                    border: none;
+                    border-top: 1px dotted #ccc;
+                    .title{
+                        width: 115px;
+                        height: auto;
+                        overflow: hidden;
+                        float: left;
+                        display: inline-block;
+                        p{
+                            color: #cf010e;
+                            margin: 10px auto 15px 15px;
+                        }
+                    }
+                    .select{
+                        border-bottom: none;
+                        width: 873px;
+                        height: auto;
+                        float: right;
+                        display: inline-block;
+                        overflow: hidden;
+                        background-color: #fff;
+                        .seleft{
+                            width: 815px;
+                            height: 75px;
+                            margin: 10px 0 5px 8px;
+                            overflow: hidden;
+                            a{
+                                display:inline-block;
+                                width: 70px;
+                                height: 18px;
+                                margin-right: 10px;
+                                margin-bottom: 10px;
+                                float: left;
+                                display: inline-block;  
+                                overflow: hidden;
+                                color: #666;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #cf010e;  
+                                    color: #fff;  
+                                }
+                            }
+                        }
+                        .sele1{
+                            width: 873px;
+                            height: auto;
+                            a{
+                                width:auto;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .fourbox{
+                width: 990px;
+                height: 39px;
+                background-color: #f5f5f5;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                .title{
+                    width: 100px;
+                    height: 39px;
+                    padding-left: 15px;
+                    line-height: 39px;
+                    color: #cf010e;
+                    float: left;
+                    display: inline-block;
+                }
+                .choose{
+                    height: 27px; 
+                    border: 1px solid #e5e5e5;
+                    border-right: none;
+                    margin-top: 10px;
+                    background-color: #fff;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    float: left;
+                    display: inline-block;
+                    .choa{
+                        width: 70px;
+                        height: 12px;
+                        line-height: 1;
+                        padding: 8px 12px 7px;
+                        border-right: 1px solid #e5e5e5;
+                        float: left;
+                        display: inline-block;
+                        text-align: center;
+                        i{
+                            width: 9px;
+                            height: 5px;
+                            background-position:-86px -53px;
+                            margin-top: 3px;
+                            margin-left: 10px;
+                            float: right;
+                            display: inline-block;
+                        }
+                    }
+                    .div{
+                        display:none;
+                        width: 853px;
+                        height: auto;
+                        padding: 10px;
+                        border: 1px solid #e5e5e5;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 27px;
+                        left: -1px;
+                        z-index: 2;
+                        a{
+                            display:inline-block;
+                            margin-right: 20px;
+                            margin-bottom: 5px;
+                            white-space: nowrap;
+                            float: left;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .fivebox{
+                width: 988px;
+                border: 1px solid #ddd;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                position: relative;
+                top: 0px !important;
+                ul{
+                    .tab{
+                        float: left;
+                        display: inline-block;
+                        a{
+                            display: block;
+                            width: 70px;
+                            height: 36px;
+                            border-right: 1px solid #ddd;
+                            text-align: center;
+                            line-height: 36px;
+                            i{
+                                width: 9px;
+                                height: 10px;
+                                background-position:-65px -108px;
+                                margin-top: 13px;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                    .on{
+                        a{
+                            text-decoration:none;
+                            background-color: #c41921;
+                            color: #fff;
+                        }
+                    }
+                    .input{
+                        float: left;
+                        width: 250px;
+                        height: 36px;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        span{
+                            width: 66px;
+                            height: 20px;
+                            border: 1px solid #aaa;
+                            margin-top: 8px;
+                            position: relative;
+                            overflow: hidden;
+                            float: left;
+                            display: inline-block;
+                            i{
+                                margin: 0 4px;
+                                line-height: 20px;
+                                float: left;
+                                display: inline-block;
+                            }
+                            input{
+                                float: left;
+                                display: inline-block;
+                                width: 50px;
+                                height: 20px;
+                                position: absolute;
+                                top: 0;
+                                right: 0px;
+                            }
+                            .ok{
+                                width: 45px;
+                                height: 20px;
+                                border: 1px solid #aaa;
+                                text-align: center;
+                                line-height: 20px;
+                                margin-right: 10px;
+                                margin-top: 2px;
+                                overflow: hidden;
+                                float: right;
+                                display: inline-block;
+                            }
+                        }
+                        .lefts{
+                            margin-left: 6px;
+
+                        }
+                        .rights{
+                            margin-right: 6px;
+                        }
+                        .zhi{
+                            width: 7px;
+                            height: 0;
+                            border:none;
+                            border-bottom: 1px solid #aaa;
+                            margin-top: 19px;
+                            margin-left: 3px;
+                            margin-right: 3px;
+                        }
+                        .sure{
+                            width: 62px;
+                            height: 28px;
+                            background-color: #fff;
+                            border: none;
+                            margin-top: 6px;
+                            float: left;
+                        }
+                    }
+                }
+                .address{
+                    height: 36px;
+                    background-color: #fffdf1;
+                    border-top: 1px solid #e0e0e0;
+                    .newadd{
+                        float: left;
+                        .tit{
+                            float: left;
+                            line-height: 36px;
+                            padding: 0 10px;
+                        }
+                        .add{
+                            float: left;
+                            top: 6px;
+                            height: 22px;
+                            line-height: 22px;
+                            border: 1px solid #ddd;
+                            display: inline-block;
+                            background: #fff;
+                            padding-left: 5px;
+                            position: relative;
+                            b{
+                                font-weight: normal;
+                                padding-right: 5px;
+                                vertical-align: middle;
+                            }
+                            i{
+                                display: inline-block;
+                                width: 22px;
+                                height: 22px;
+                                background-position: -370px -263px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    label{
+                        line-height: 20px;
+                        height: 20px;
+                        position: relative;
+                        top: 8px;
+                        margin-right: 16px;
+                        vertical-align:bottom;
+                        
+                        input{
+                            position: relative;
+                            margin-right: 4px;
+                            border: 1px solid #e0e0e0;
+                            width: 14px;
+                            height: 14px;
+                            overflow: hidden;
+                            background-color: #fff;
+                            margin-top: -1px;
+                            vertical-align:bottom;
+                        }
+                    }
+                    .first{
+                        margin-left:20px;
+                    }
+                }
+            }
+            .goodslist{
+                width: 988px;
+                height: auto;
+                margin: 0 auto 70px;
+                ul{
+                    li{
+                        width: 247px;
+                        height: 420px;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        float: left;
+                        display: inline-block;
+                        .content{
+                            width: 245px;
+                            height: 418px;
+                            margin: 0 auto;
+                            background: #fff;
+                            overflow: hidden;
+                            position: relative;
+                            z-index: 10;
+                            border:4px solid #fff;
+                            box-sizing:border-box;
+                            &:hover{
+                                 border:4px solid #eee;
+                            }
+                            .img{
+                                .span{
+                                    display: none;
+                                    cursor: pointer;
+                                    width: 72px;
+                                    height: 18px;
+                                    padding: 2px 0;
+                                    border-radius: 10px;
+                                    position: absolute;
+                                    top: 200px;
+                                    left: 15px;
+                                    background-color: #a60000;
+                                    color: #fff;
+                                    z-index:2;
+                                    i{
+                                        width: 12px;
+                                        height: 12px;
+                                        background-position: 0 -173px;
+                                        margin: 3px 9px auto 11px;
+                                    }
+                                }
+                                a{
+                                    display: block;
+                                    width: 220px;
+                                    height: 220px;
+                                    margin: 10px auto;
+                                    overflow: hidden;
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    img{
+                                        width: 220px;
+                                        height: 220px;
+                                    }
+                                }
+                                 &:hover{
+                                    .span{
+                                        display:block;
+                                    }
+                                }
+                            }
+                            .price{
+                                width: 220px;
+                                margin: 0 auto 3px;
+                                height: 24px;
+                                font-size: 16px;
+                                color: #e4393c;
+                                line-height: 24px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                span{
+                                    font-size: 20px;
+                                    vertical-align: baseline;
+                                    padding-left: 3px;
+                                }
+                            }
+                            .names{
+                                display: block;
+                                width: 220px;
+                                height: 36px;
+                                margin: 0 auto 3px;
+                                color: #000;
+                                overflow: hidden;
+                                &:hover{
+                                    color: #cf010e;
+                                }
+                            }
+                            .judge{
+                                display: block;
+                                color: #005aa0;
+                                width: 220px;
+                                margin: 0 auto 5px;
+                                white-space: nowrap;
+                                 &:hover{
+                                    color: #cf010e;
+                                    text-decoration:none;
+                                }
+                            }
+                            .seller{
+                                display: block;
+                                width: 220px;
+                                margin: 0 auto 5px;
+                                vertical-align: middle;
+                                font-size: 0px;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration:none;
+                                }
+                                .i{
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-right: 3px;
+                                    vertical-align: middle;
+                                    background-position: -284px -286px;
+                                }
+                                span{
+                                    color: #999;
+                                    font-size: 12px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .activ{
+                                height: 18px;
+                                width: 220px;
+                                margin: 0 auto;
+                                overflow: hidden;
+                                span{
+                                    height: 18px;
+                                    color: #fff;
+                                    background-color: #cf010e;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    padding: 0 5px;
+                                    margin-right: 5px;
+                                    float: left;
+                                }
+                            }
+                            .shopcar{
+                                width: 220px;
+                                margin: 0 auto;
+                                margin-top: 7px;
+                                input{
+                                    width: 28px;
+                                    height: 26px;
+                                    border: 1px solid #dbdbdb;
+                                    border-radius: 3px;
+                                    line-height: 26px;
+                                    text-align: center;
+                                    margin-right: 2px;
+                                    float: left;
+                                    display: inline-block;
+                                }
+                                .count{
+                                    width: 16px;
+                                    height: 28px;
+                                    border-radius: 3px;
+                                    float: left;
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    background: url(../img/public8.png) no-repeat -185px -138px; 
+                                    a{
+                                        display: block;
+                                        width: 16px;
+                                        height: 14px;
+                                    }
+                                }
+                                .cars{
+                                    width: 76px;
+                                    height: 26px;
+                                    padding-left: 32px;
+                                    line-height: 26px;
+                                    border: 1px solid #ddd;
+                                    color: #cf010e;
+                                    margin-left: 8px;
+                                    float: left;
+                                    display: inline-block;
+                                    background: url(../img/public8.png) no-repeat -252px -2px;
+                                    &:hover{
+                                        text-decoration: none;
+                                        color: #fff;
+                                        background: url(../img/public8.png) no-repeat -252px -32px;
+                                        background-color: #cf010e;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@charset "utf-8"; 
+@import "common";
+@import "header";
+@import "footer";
+body {
+    color: #666;
+    min-width: 1000px;
+    font-size: 12px;
+    display: block;
+}
+strong,b{
+    font-weight:normal;
+}
+a{
+    &:hover{
+        color: #cc0001;
+        text-decoration: underline;
+    }
+}
+span{
+    vertical-align: top;
+}
+.a_active{
+	color: #cc0001 !important; 
+    text-decoration: underline;
+}
+
+//小图标背景图
+.public{
+	display:inline-block;
+	background: url(../img/public.png) no-repeat;
+} 
+.public2{
+    display:inline-block;
+	background: url(../img/public3.png) no-repeat;
+}
+
+//小图标中的三角
+.s{
+    display:inline-block;
+    width: 9px;
+    height: 8px; 
+    background-position: -99px 3px;
+}

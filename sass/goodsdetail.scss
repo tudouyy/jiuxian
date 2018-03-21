@@ -1,0 +1,1170 @@
+@charset "utf-8"; 
+@import "common";
+@import "header";
+@import "footer";
+@import "side";
+
+body {
+    color: #666;
+    min-width: 1000px;
+    font-size: 12px;
+    display: block;
+}
+strong,b{
+    font-weight:normal;
+}
+.a_active{
+	color: #cc0001 !important; 
+    text-decoration: underline;
+}
+
+//小图标背景图
+.public{
+	display:inline-block;
+	background:url(../img/public.png) no-repeat;
+} 
+.public2{
+	background:url(../img/public3.png) no-repeat;
+}
+.public5{
+    display:inline-block;
+    background:url(../img/public5.png) no-repeat;
+}
+//小图标中的三角
+.s{
+	display:inline-block;
+	width: 9px;
+    height: 8px; 
+    background-position: -99px 3px;
+}
+//section
+section{
+    background:#fff;
+    .section_in{
+        .nav_left{
+           h2{
+
+            &:hover{
+                .nav_left_ul{
+                    display:block;
+                }
+            }
+            .nav_left_ul{
+                display:none;
+            }
+           }
+        }
+    }
+    .content_one{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        .top{
+            height: 70px;
+            overflow: hidden;
+            padding-top: 10px;
+        }
+        .tit{
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            a{
+                color: #666;
+            }
+            .last{
+                color: #cc3333;
+            }
+            i{
+                color: rgb(153, 153, 153);
+                font-style: normal;
+                font-family: 宋体;
+                padding: 0px 8px;
+            }
+        }
+        .con{
+            border: 1px solid #f2f2f2;
+            .showimg{
+                width: 440px;
+                position:relative;
+                padding-bottom: 18px;
+                .large{
+                    width: 420px;
+                    height: 420px;
+                    position:absolute;
+                    top:0;
+                    left:420px;
+                    overflow: hidden;
+                    z-index:999;
+                    display:none;
+                    .largimg{
+                        width:840px;
+                        height:840px;
+                        position:absolute;
+                    }
+                }
+                .imgpic{
+                    width: 420px;
+                    height: 420px;
+                    border: 0;
+                    position: relative;
+                    img{
+                        width: 420px;
+                        height: 420px;
+                    }
+                    .shado{
+                        width:210px;
+                        height:210px;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        background:rgba(0,0,0,.4);
+                        cursor: pointer;
+                        display:none;
+                    }
+
+                }
+                .imgbot{
+                    height: 64px;
+                    padding-top: 5px; 
+                    .derc{
+                        padding-left: 14px;
+                        height: 64px;
+                        display: block;
+                        width: 14px;
+                        text-align: center;
+                        float: left;
+                        .p{
+                            width: 13px;
+                            height: 30px;
+                            margin-top: 17px;
+                        }
+                        .p1{
+                            background-position: -177px -20px;
+                        }
+                        .p2{
+                            background-position: -193px -20px;   
+                        }
+                    }
+                    .ulsdiv{
+                        width: 380px;
+                        height: 64px;
+                        margin: 0 2px;
+                        float: left;
+                        overflow: hidden;
+                        img{
+                            display: inline-block;
+                            width:54px;
+                            height:54px;
+                            border: 2px solid #fff;
+                            margin: 0 6px;
+                        }
+                        .active{
+                            border: 2px solid #c33;
+                        }
+                    }    
+                }
+                .other{
+                    padding: 22px 20px 0;
+                    height: 20px;
+                    line-height: 20px;
+                    P{
+                        a{
+                            display: inline-block;
+                            color: #666;
+                            margin: 0 2px;
+                            vertical-align:middle;
+                            .i1{
+                                width: 13px;
+                                height: 12px;
+                                margin: 4px 4px 0 0;
+                                overflow: hidden; 
+                                background-position: -148px -14px;
+                                vertical-align:top;
+
+                            }
+                            .i2{
+                                width: 15px;
+                                height: 15px;
+                                background-position: -125px -1px;
+                                margin: 2px 5px 0 0;
+                                vertical-align:top;
+
+                            }
+                        }
+                    }
+                }
+            }
+            .infodiv{
+                width: 548px;
+                min-height: 533px;
+                padding: 20px 0 10px 10px;
+                border-right: 0;
+                position: relative;
+                .one{
+                    padding: 0 10px 5px;
+                    h1{
+                        width: 528px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #333;
+                    }
+                    p{
+                        width: 528px;
+                        color: #c33;
+                        line-height: 18px;
+                        font-size: 14px;
+                        padding: 8px 0 3px;
+                    }
+                }
+                .two{
+                    background: #fafafa;
+                    margin-top: 5px;
+                    position: relative;
+                    padding: 10px;
+                    .div{
+                        width: 528px;
+                        float: left;
+                        line-height: 30px;
+                        .pl{
+                            width:36px;
+                            padding-right: 28px;
+                            color: #666;
+                        }
+                        .pr{
+                             display:block;
+                             width: 464px;
+                             color: #999;
+                            del{
+                                display:block;
+                                float:left;
+                                text-decoration: line-through;
+                            }
+                            a{
+                                display:inline-block;
+                                float:right;
+                                width: 104px;
+                                height: 26px;
+                                text-align: center; 
+                                vertical-align: middle;
+                                .i1{
+                                    vertical-align: middle;
+                                    width: 15px;
+                                    height: 15px;
+                                    background-position: -305px 0;
+                                }
+                                span{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    padding: 0 6px;
+                                    font-size: 12px;
+                                    line-height: 26px;
+                                }
+                                .i2{
+                                    vertical-align: middle;
+                                    width: 10px;
+                                    height: 5px;
+                                    background-position: -122px -46px;
+                                }
+                            }
+                             em{
+                                color: #cc3333;
+                                font-size: 14px;
+                            }
+                            strong{
+                                font-size: 26px;
+                                color: #cc3333;
+                            }
+                            ul{
+                                 li{
+                                    display:block;
+                                    width:464px;
+                                    overflow:hidden;
+                                     i{
+                                        height: 16px;
+                                        line-height: 16px;
+                                        color: #fff;
+                                        background: #ff0000;
+                                        padding: 0 3px;
+                                        display: inline-block;
+                                        float:left;
+                                        vertical-align: middle;
+                                        margin-top:7px;
+                                    }
+                                    span{
+                                        color: #c33;
+                                        float:left;
+                                        margin-left: 12px;
+                                    }
+                                    a{
+                                        display: inline-block;
+                                        float:left;
+                                        width:30px;
+                                        height:30px;
+                                        vertical-align:middle;
+                                        margin-left:13px;
+                                        margin-right:13px;
+                                        img{
+                                            display:block;
+                                            width:30px;
+                                            height:30px;
+                                        }
+                                    }
+                                    em{
+                                        color: #666;
+                                         float:left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .div3{
+                        margin-top: 10px;
+                    }
+                    // .div4{
+                    //     width: 104px;
+                    //     height: 26px;
+                    //     position: absolute;
+                    //     right: 12px;
+                    //     top: 12px;
+                    // }
+                }
+                .three{
+                    border-bottom: 1px dotted #d6d6d6;
+                    ul{
+                        padding-left: 70px;
+                        height: 38px;
+                        line-height: 38px;
+                        li{
+                            float: left;
+                            width: 30%;
+                            vertical-align: middle;
+                            font-size: 12px;
+                            .l{
+                                width: 15px;
+                                height: 13px;
+                            }
+                            .l1{
+                                background-position: -194px 0;
+                            }
+                            .l2{
+                                background-position: -214px 0;
+                            }
+                            .l3{
+                                background-position: -232px 1px;
+                            }
+                            .l4{
+                                height: 15px;
+                                margin-left: 5px;
+                                margin-top:2px;
+                                background-position: -251px -18px;
+                            }
+                            span{
+                                color: #999;
+                                margin: 0 8px 0 6px;
+                            }
+                            em{
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+                .four{
+                    padding: 10px;
+                    div{
+                        width: 528px;
+                        float: left;
+                        line-height: 30px;
+                        margin: 6px 0 10px 0;
+                        .pp{
+                            color: #666;
+                            float: left;
+                            width: 36px;
+                            padding-right: 28px;
+                            line-height: 19px;
+                            margin-top:10px;
+                            vertical-align:middle;
+                        } 
+                        .pp4{
+                            margin-top:15px;
+                        }
+                        .line1{
+                            float: left;
+                            width: 464px;
+                            height: 19px;
+                            vertical-align:middle;
+                            line-height: 19px;
+                            .dp{
+                                height: 19px;
+                                float: left;
+                                margin-right: 10px;
+                                cursor: pointer;
+                                i{
+                                    background: url(../img/bg06.jpg) no-repeat;
+                                    float: left;
+                                    width: 12px;
+                                    height: 19px; 
+                                    display: inline-block;
+                                }
+                                span{
+                                    display:inline-block;
+                                    float: left;
+                                    height: 17px;
+                                    line-height: 18px;
+                                    color: #cc3333;
+                                    border:1px solid #cc3333;
+                                    border-left:0; 
+                                    background: #fff1f2;
+                                    padding: 0 16px 0 6px;
+                                    overflow: hidden;
+                                }
+                            }
+                            a{
+                                float: left;
+                                color: #666;
+                                line-height: 20px;
+                            }
+                        }
+                        .line2{
+                            float: left;
+                            width: 464px;
+                            height: 19px;
+                            line-height:19px;
+                            vertical-align:middle;
+                            a{
+                                display: inline-block;
+                                height: 22px;
+                                line-height: 22px;
+                                background: #fff;
+                                padding-left: 6px;
+                                border: 1px solid #999;
+                                i{
+                                    vertical-align: middle;
+                                    width: 10px;
+                                    height: 5px;
+                                    background-position: -122px -46px; 
+                                    margin:auto 5px;
+                                }
+                            }
+                        }
+                        .line3{
+                            float: left;
+                            width: 464px;
+                            height: 19px;
+                            line-height:19px;
+                            vertical-align:middle;
+                            a{
+                                float: left;
+                                height: 32px;
+                                width:32px;
+                                display: inline-block;
+                                height: 30px;
+                                border: 1px solid #e5e5e5;
+                                vertical-align: middle;
+                                margin-right:10px;
+                                img{
+                                    display: inline-block;
+                                    height: 30px;
+                                    width:30px;
+                                }
+                            }
+                        }
+                        .line4{
+                            float: left;
+                            width: 464px;
+                            height: 19px;
+                            line-height:19px;
+                            vertical-align:middle;
+                            div{
+                                float: left;
+                                width: 66px;
+                                height: 30px;
+                                position: relative;
+                                input{
+                                    float: left;
+                                    width: 26px;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    color: #666;
+                                    padding: 0 8px;
+                                    border: 1px solid #999;
+                                }
+                                a{
+                                    width: 17px;
+                                    height: 11px;
+                                    position: absolute;
+                                    right: 0;
+                                    display: block;
+                                    border: 1px solid #999;
+                                }
+                                .a1{  
+                                    background-position: -70px -25px;
+                                    top: 0;
+                                }
+                                .a2{
+                                    background-position: -70px -41px;
+                                    top: 17px;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .fifth{
+                        height:30px;
+                        margin-bottom: 18px;
+                        position: relative;
+                        padding-left: 64px;
+                        margin-top: 28px;
+                        a{
+                            display: inline-block;
+                            width: 166px;
+                            height: 38px;
+                            line-height: 38px;
+                            text-align: center;
+                            font-size: 16px;
+                            margin-right: 12px;
+                            border: 1px solid #ffcccc;
+                            background: #cc3333;
+                            color: #fff;
+                        }
+                    }
+                } 
+            }
+            .infori{
+                width: 200px;
+                .top{
+                    text-align: center;
+                    width:170px;
+                    height:116px;
+                    padding: 30px 15px 20px;
+                    border-bottom: 1px dotted #d7d7d7;
+                    a{
+                        display:block;
+                        img{
+                            display:block;
+                            margin:0 auto;
+                        }
+                        span{
+                            display:block;
+                            line-height: 20px;
+                            padding-top: 6px;
+                        }
+                    }
+                    i{
+                        display: block;
+                        margin:0 auto;
+                        width: 54px;
+                        height: 18px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: #fff;
+                        background: #cf000e;
+                        border-radius: 2px;
+                        margin-top: 2px;
+                    }
+                }
+                .mid{
+                    padding-left: 35px;
+                    ul{
+                        padding-top: 10px;
+                        li{
+                            padding-top: 14px;
+                            line-height: 22px;
+                            .p1{
+                                width: 146px;
+                                position: relative;
+                                height: 22px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                img{ 
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                               strong {
+                                    display: inline-block; 
+                                    vertical-align: middle;
+                                    font-weight: normal;
+                                    font-family: "宋体";
+                                    margin-left: 6px;
+                                }
+                            }
+                            .p2{
+                                width: 120px;
+                                position: relative;
+                                padding-left: 26px;
+                                color: #999;
+                                height: 22px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+                .bot{
+                    padding-left: 35px;
+                    a{
+                        height: 28px;
+                        line-height: 28px;
+                        background: #fafafa;
+                        text-align: center;
+                        display: block;
+                        border-radius: 2px;   
+                        border: 1px solid #e9e9e9; 
+                        width: 104px;
+                        margin-top: 15px;
+                        color: #666666;
+                        i{
+                            display:inline-block;
+                            animation: upDown ease-in 0.8s infinite;
+                            background:url(../img/per.png) no-repeat;  
+                            position: relative;
+                            top: 2px;
+                            width: 17px;
+                            height: 22px;
+                            vertical-align: middle;
+                        }
+                        span{
+                            font-size: 12px;
+                            color: #666;
+                            margin-left: 5px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .suit{
+        margin-top: 10px;
+        border: 1px solid #f2f2f2;
+        padding-top: 25px;
+        background: #fff;
+        position: relative;
+        height: 209px;
+        .tit{
+            position: absolute;
+            height: 26px;
+            top: -1px;
+            left: 0;
+            span{
+                display: block;
+                width: 94px;
+                height: 26px;
+                line-height: 34px;
+                font-family: "Microsoft YaHei";
+                font-size: 16px;
+                text-align: center;
+                color: #666;
+                overflow: hidden;
+            }
+            .tit_in{
+                width: 94px;
+                height: 26px;
+                float: left;
+                position: relative;
+                cursor: pointer;
+                span{
+                    color: #cc3333;
+                    border-top: 2px solid #cc3333;
+                    height: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .con{
+            height: 209px;
+            .leftBox{
+                width: 982px;
+                float: left;
+                height: 197px;
+                padding-left: 17px;
+                margin-top: 12px;
+                .lrone{
+                    width: 171px;
+                    position: relative;
+                    padding-left: 10px;
+                    .img{
+                        display:block;
+                        padding: 5px 0;
+                        text-align: center;
+                        width: 106px;
+                        height: 106px;
+                        img{
+                            display:block;
+                            width: 106px;
+                            height: 106px;
+                        }
+                    }
+                    .tits{
+                        display:block;
+                        font-family: "宋体";
+                        height: 36px;
+                        line-height: 18px;
+                        overflow: hidden;
+                        padding: 0 10px;
+                        width: 106px;
+                        color: #666;
+                    }
+                    i{
+                        background-position: 0 0;
+                        width: 16px;
+                        height: 16px;
+                        display: block;
+                        position: absolute;
+                        top: 70px;
+                        right: 23px;
+                    }
+                }
+                .rlsum{
+                    width: 800px;
+                    height: 182px;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    padding-bottom: 15px;
+                    .ulout{
+                        width: 100%;
+                        ul{
+                            width: 2000px;
+                            li{
+                                float: left;
+                                width: 200px;
+                                .img{
+                                    padding: 5px 0;
+                                    width: 106px;
+                                    height: 106px;
+                                    display:block;
+                                    position: relative;
+                                     img{
+                                        display:block;
+                                        width: 106px;
+                                        height: 106px;
+                                    }
+                                }
+                                 .tits{
+                                    display:block;
+                                    font-family: "宋体";
+                                    height: 36px;
+                                    line-height: 18px;
+                                    overflow: hidden;
+                                    padding: 0 10px;
+                                    width: 106px;
+                                    color: #666;
+                                }
+                                div{
+                                    margin-top: 5px;
+                                    padding-left: 1px;
+                                    input{
+                                        width: 14px;
+                                        height: 14px;
+                                        overflow: hidden;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                    }
+                                    span{
+                                        font-size: 14px;
+                                        color: #cc3333;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightBox{
+                width: 152px;
+                border-left: 1px dotted #cccccc;
+                height: 188px;
+                padding-left: 44px;
+                div{
+                    line-height: 70px;
+                    font-size: 12px;
+                    strong{
+                        font-size: 12px;
+                        color: #cc3333;
+                    }
+                }
+                p{
+                    line-height: 24px;
+                    height: 24px;
+                    span{
+                        display: inline-block;
+                        width: 48px;
+                        height: 24px;
+                        font-family: "宋体";
+                        color: #666;
+                    }
+                    strong{
+                        color: #cc3333;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                a{
+                    display: block;
+                    width: 101px;
+                    height: 26px;
+                    background: #cc3333;
+                    text-align: center;
+                    line-height: 26px;
+                    font-size: 14px;
+                    color: #fff;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .contpic{
+        margin-top: 10px;
+        .conleft{
+            width: 200px;
+            .box{
+                border: 1px solid #f2f2f2;
+                margin-bottom: 10px;
+                .tit{
+                    height: 28px;
+                    background: #fafafa;
+                    padding: 0 8px;
+                    i{
+                        display: block;
+                        background: #cc3333;
+                        width: 3px;
+                        height: 12px;
+                        float: left;
+                        margin-top: 8px;
+                        overflow: hidden;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #333;
+                        float: left;
+                        line-height: 28px;
+                        padding-left: 5px;
+                    }
+                }
+                .con{
+                    background: #fff;
+                    padding: 10px 0 10px 15px;
+                    .uls{
+                        li{
+                            width: 90px;
+                            float: left;
+                            line-height: 24px;
+                            a{
+                                display: block;
+                                width: 48px;
+                                height: 24px;
+                                color: #666;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration:underline;
+                                }
+                            }
+                        }
+                    }
+                    .uls2{
+                        li{
+                            width: 33.3%;
+                            a{
+                                &:hover{
+                                    color: #cc3333;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .uls3{
+                        li{
+                            margin-bottom: 10px;
+                            .aone{
+                                display:block;
+                                width:120px;
+                                height:120px;
+                                text-align: center;
+                                margin-bottom: 5px;
+                                margin-left:22px;
+                                img{
+                                    display:block;
+                                    width: 120px;
+                                    height: 120px;
+                                }
+                            }
+                            .bone{
+                                display:block;
+                                color: #666;
+                                width: 100%;
+                                height: 20px;
+                                line-height: 20px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            p{
+                                font-size: 12px;
+                                height: 20px;
+                                color: #cc3333;
+                                line-height: 20px;
+                                width: 100%;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    .contop{
+                        width: 100%;
+                        overflow: hidden;
+                        height: 20px;
+                       ul{
+                            width: 105%;
+                            li{
+                                height: 20px;
+                                line-height: 20px;
+                                background: #f2f2f2;
+                                float: left;
+                                width: 56px;
+                                color: #999;
+                                font-family: "宋体";
+                                margin-right: 5px;
+                                display: inline;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+                            .on{
+                                background: #cc3333;
+                                color: #fff;
+                            }
+                       }
+                    }
+                    .conbot{
+                        padding-top: 10px;
+                        ul{
+                            li{
+                                height: 60px;
+                                overflow: hidden;
+                                position: relative;
+                                padding-left: 10px;
+                                margin: 10px 0;
+                                float: left;
+                                i{
+                                    font-style: normal;
+                                    display: block;
+                                    width: 14px;
+                                    height: 14px;
+                                    text-align: center;
+                                    line-height: 14px;
+                                    background: #cccccc;
+                                    color: #fff;
+                                    border-radius: 2px;
+                                    position: absolute;
+                                    left: 1px;
+                                    top: 0;
+                                }
+                                .on{
+                                     background: #cc3333;
+                                }
+                                .mid{
+                                    display:block;
+                                    width: 60px;
+                                    height: 60px;
+                                    float: left;
+                                    img{
+                                        display:block;
+                                        width: 60px;
+                                        height: 60px;
+                                    }
+                                }
+                                .posi{
+                                    width: 103px;
+                                    padding-left: 5px;
+                                    a{
+                                        display:block;
+                                        width: 103px;
+                                        font-family: "宋体";
+                                        height: 32px;
+                                        line-height: 16px;
+                                        overflow: hidden;
+                                        color: #666;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        color: #cc3333;
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .conright{
+            width: 990px;
+            float: right;
+            position: relative;
+            .hea{
+                width: 988px;
+                height: 47px;
+                background: #fff;
+                border: 1px solid #ededed;
+                border-bottom:none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                .divul{
+                    height: 48px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    ul{
+                        li{
+                            float: left;
+                            height: 48px;
+                            line-height: 48px;
+                            font-size: 12px;
+                            color: #333;
+                            cursor: pointer;
+                            margin-left: -1px;
+                            padding: 0 25px;
+                            background:url(../img/bg07.jpg) no-repeat right center;
+                            h3{
+                                display: block;
+                                color: #333;
+                                cursor: pointer;
+                                font-weight: normal;
+                                font-size: 14px;
+                            }
+                        }
+                        .on{
+                            line-height: 44px;
+                            height: 46px;
+                            background: none;
+                            padding: 0 24px;
+                            border: 1px solid #ededed;
+                            border-top: 2px solid #cc3333;
+                            border-bottom: none;
+                            color: #cc3333;
+                        }
+                        .last{
+                            background: none;
+                        }
+                    }
+                }
+                .rights{
+                    color: #999;
+                    cursor: pointer;
+                    font-size: 12px;
+                    height: 47px;
+                    line-height: 47px;
+                    padding-right: 46px;
+                    position: relative;
+                    text-align: center;
+                    width: 140px;
+                    span{
+                        background-position: -122px -60px;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        right: 27px;
+                        top: 13px;
+                    }
+                    i{
+                        background-position: -50px -42px;
+                        height: 5px;
+                        overflow: hidden;
+                        position: absolute;
+                        right: 10px;
+                        top: 22px;
+                        width: 9px;
+                    }
+                }
+            }
+            .bod{
+                padding-top: 48px;
+                .item{
+                    display: block;
+                    .item_div{
+                        border: 1px solid #f2f2f2;
+                        .one{
+                            background-color: #fbfbfb;
+                            padding: 15px 28px;
+                            width: 932px;
+                            ul{
+                                width: 100%;
+                                overflow: hidden;
+                                li{
+                                    width: 25%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    float: left;
+                                    i{
+                                        width: 20px;
+                                        height: 20px;
+                                        margin-top: 5px;
+                                        display: block;
+                                        float: left;
+                                    }
+                                    .i1{
+                                        background-position: -20px -40px;
+                                    }
+                                    span{
+                                        float: left;
+                                        display: block;
+                                        padding-left: 5px;
+                                        width: 200px;
+                                        height: 30px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        color: #666;
+                                    }
+                                }
+                            }
+                        }
+                        .two{
+                            padding: 20px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            h3{
+                                height: 24px;
+                                line-height: 24px;
+                                font-weight: normal;
+                                color: #666666;
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                                i{
+                                    width: 4px;
+                                    height: 4px;
+                                    display: block;
+                                    float: left;
+                                    margin-top: 10px;
+                                    background: #cccccc;
+                                    overflow: hidden;
+                                }
+                                span{
+                                    display: inline-block;
+                                    float: left;
+                                    padding-left: 6px;
+                                }
+                            }
+                            .inginf{
+                                text-align: center;
+                            }
+                        }
+                        .three{
+                           height: 50px;
+                            line-height: 50px;
+                            padding-left: 28px;
+                        }
+                    }
+                }
+            }
+            .fot{
+
+            }
+
+        }
+    }
+}

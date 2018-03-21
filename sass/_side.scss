@@ -1,0 +1,142 @@
+//fixed右边栏
+.fixed{
+	width: 35px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    background: #ffffff;
+    box-shadow: 1px 2px 5px #999;
+    .fixed_con{
+    	width: 35px;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    z-index: 311;
+	    text-align: center;
+	    height: 365px;
+	    margin-top: -182.5px;
+	    .box{
+	    	width: 35px;
+    		position: relative;
+    		.oragin{
+    			width: 35px;
+			    padding: 10px 0;
+			    position: relative;
+			    z-index: 350;
+			    cursor: pointer;
+			    background: none;
+			    .c{
+					width: 19px;
+   				 	height: 19px;
+			    }
+			    .c1{
+					background-position: 0 -163px;
+			    }
+			    .c11{
+					background-position: -20px -163px;
+			    }
+			    .c2{
+			    	background-position: -40px -163px;
+			    }
+			    .c12{
+			    	background-position: -60px -163px;
+			    }
+			    .c3{
+					background-position: -120px -163px;
+			    }
+			    .c13{
+					background-position: -140px -163px;
+			    }
+			    .c4{
+			    	background-position: -45px -331px;
+			    }
+			    .c14{
+			    	background-position: -65px -331px;
+			    }
+			    .c11,.c12,.c13,.c14{
+			    	display:none;
+			    }
+			    span{
+			    	display: block;
+				    line-height: 16px;
+				    color: #333333;
+				    padding: 2px 0 0;
+			    }
+			    .cartspan{
+			    	width: 14px;
+				    font-size: 14px;
+				    margin: 0 10px 0 11px;
+				    padding: 6px 0 4px;
+			    }
+			    &:hover{
+			    	background:#cf1c23;
+			    	span{
+			    		color:#fff;
+			    	}
+			    	.c11,.c12,.c13,.c14{
+				    	display:block;
+				    	margin-left:8px;
+				    }
+				    .c1,.c2,.c3,.c4{
+				    	display:none;
+				    }
+			    }
+    		}
+	    }
+
+    }
+    .fixed_bot{
+    	width: 35px;
+	    position: absolute;
+	    bottom: 30px;
+	    right: 0;
+	    text-align: center;
+	    .box{
+			width: 35px;
+		    position: relative;
+		    margin: 0;
+		    .oragin{
+		    	padding: 8px 0;
+
+		    	.c{
+					width: 19px;
+				 	height: 16px; 
+				}
+				.c5{
+					background-position: 3px -186px;
+	    			
+				}
+				.c6{
+					background-position: 3px -203px;
+					display:none;
+				}
+				.c7{
+					background-position: -19px -186px;
+				}
+				.c8{
+					background-position: -19px -203px;
+					display:none;
+				}
+				.c9{
+					background-position: -40px -186px;
+				}
+				.c10{
+					background-position: -40px -203px;
+					display:none;
+				}	
+		    }
+			&:hover{
+				background:#ce171f;
+				.c5,.c7,.c9{
+					display:none;
+				}
+				.c6,.c8,.c10{
+					display:block;
+					margin-left:8px;
+				}
+			}
+	    }
+    }
+}

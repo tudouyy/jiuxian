@@ -1,0 +1,291 @@
+@charset "utf-8"; 
+@import "common";
+body {
+    color: #666;
+    min-width: 1000px;
+    font-size: 12px;
+    display: block;
+}
+
+.a_active{
+	color: #cc0001 !important;
+    text-decoration: underline;
+}
+
+//小图标背景图
+.public{
+	display:inline-block;
+	background:url(../img/public.png) no-repeat;
+} 
+.public2{
+	background:url(../img/public3.png) no-repeat;
+
+}
+//小图标中的三角
+.s{
+	display:inline-block;
+	width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+}
+//footer
+footer{
+	width:100%;
+	.footer_in{
+		width:100%;
+		margin:0 auto;
+		.top{
+			background:#333;
+			.cont{
+				margin:0 auto;
+				width: 1200px;
+			    height: 84px;
+			    border-bottom: 1px solid #494949;
+			    .t_left{
+			    	height: 40px;
+				    line-height: 40px;
+				    padding: 22px 0;
+				    i{
+				    	width: 40px;
+					    height: 40px;
+					    background-position: -144px -22px;
+					    margin-right: 18px;
+					    display: inline-block;
+					    float:left;
+				    }
+				    b{
+				    	font-size: 24px;
+					    color: #c00;
+					    margin-right: 25px;
+					    display: inline-block;
+    					float: left;
+				    }    
+				    span{
+				    	font-size: 14px;
+					    color: #fff;
+					    margin-right: 8px;
+					    display: inline-block;
+    					float: left;
+				    }
+			    }
+			    .t_right{
+			    	height: 30px;
+    				padding: 26px 0;
+				    line-height: 30px;
+    				span{
+    					font-size: 14px;
+					    color: #fff;
+					    display: inline-block;
+    					float: left;
+    					margin-right:12px;
+    				}
+    				p{
+    					float: left;
+    					width: 240px;
+					    height: 30px;
+					    border: 1px solid #494949;
+
+    					input{
+    						width: 190px;
+						    height: 30px;
+						    line-height: 30px;
+						    float: left;
+						    background: 0;
+	    				}
+	    				.i{
+	    					display: inline-block;
+						    width: 22px;
+						    height: 18px;
+						    background-position: -133px 0;
+						    margin: 6px 0 0 10px;
+						    cursor: pointer;
+						    float: left;
+	    				}
+    				}
+    				
+			    }
+			}
+			.conb{
+				width: 1200px;
+				margin:0 auto;
+				overflow: hidden;
+				padding: 30px 0 60px;
+				li{
+					width: 158px;
+					float: left;
+				    display: inline;
+				    margin-right: 15px;
+				    h3{
+			    	    height: 26px;
+					    line-height: 26px;
+					    padding: 5px 0;
+					    .p{
+							display: inline-block;
+						    width: 26px;
+						    height: 26px;
+						    margin-right: 9px;
+						    float: left;
+					    }
+					     .p1{
+						    	background-position: 0 -131px; 
+						    }
+						.p2{
+						    	background-position: -30px -131px; 
+						    }
+					     .p3{
+						    	background-position: -60px -131px; 
+						    }
+					     .p4{
+						    	background-position: -90px -131px; 
+						    }
+					     .p5{
+						    	background-position: -120px -131px; 
+						    }
+					     .p6{
+						    	background-position: -150px -131px; 
+						    }
+					  	span{
+					  		display: inline-block;
+						    font-size: 14px;
+						    color:#fff;
+						    float: left;
+						    white-space: nowrap;
+					  	}
+				    }
+			     	 p{
+				    	width: 123px;
+				    	height:26px;
+				    	line-height: 26px;
+					    padding-left: 35px;
+					    overflow: hidden;
+					    white-space: nowrap;
+					    a{  
+					    	color: #ccc;
+					    }
+					    .ai_class{ 
+							text-decoration:underline;
+					    }
+				    }
+				   
+				}
+				.last{
+					 margin-right:0;
+					 div{
+				    	width: 130px;
+					    height: 28px;
+					    line-height: 28px;
+					    padding: 5px 0 13px;
+					    position:relative;
+					    a{
+					    	.x{
+					    		display: inline-block;
+							    width: 28px;
+							    height: 28px;
+							    margin-right: 9px;
+							    float: left;
+					    	}
+					    	.x1{
+					    		background-position: -140px -74px;
+					    	}
+					    	.x2{
+					    		background-position: -103px -74px
+					    	}
+					    	span{
+					    		display: inline-block;
+							    color: rgb(255, 255, 255);
+							    float: left;
+					    	}
+					    	.chanspan{
+					    		width:48px;
+								height:28px;
+					    	}
+					    }
+					    .wechat{
+					        display: none;
+							width: 84px;
+						    height: 84px;
+						    position: absolute;
+						    left: 37px;
+						    top: 35px;
+					    }
+				    }
+				}
+
+			}
+		}
+		.bot{
+			width:1200px;
+			margin: 0 auto;
+    		padding: 20px 0 40px;
+    		.botl{
+    			width: 760px;
+    			.pone{
+    				height: 16px;
+				    padding: 4px 0;
+				    margin-left: 0;
+				    a{
+				    	display: inline-table;
+					    height: 16px;
+					    line-height: 16px;
+					    padding: 0 4px;
+					    &:hover{
+    						color: #cc0000;
+    						text-decoration:underline;
+    					}
+				    }
+
+    			}
+    			.ptwo{
+    				padding: 17px 0 3px 0;
+				    color: #999;
+				    height: 20px;
+				    line-height: 20px;
+				    color: #999;
+				    a{
+				    	display: inline-block;
+					    float: left;
+					    height: 20px;
+					    color: #999;
+    					margin: 0 3px;
+    					&:hover{
+    						color: #cc0000;
+    						text-decoration:underline;
+    					}
+				    }
+
+				    span{
+				    	color: #cc0000;
+				    }
+    			}
+    			.two{
+    				padding: 2px 0 3px 0;
+    			}
+    			.four{
+    				margin-bottom:40px;
+    			}
+    			.pthree{
+    				height: 47px;
+    				line-height: 20px;
+    				text-align: left;
+    				margin-top:8px;
+    				margin-bottom:10px;
+    				a{
+    					display: inline-table;
+    					margin-right: 5px;
+    				}
+    			}
+    		}
+    		.botr{
+    			width: 240px;
+    			text-align: center;
+    			padding-top: 20px;
+    			div{
+    				float: left;
+				    width: 80px;
+				    display: inline;
+				    margin-left: 40px;
+    			}
+    		}
+		}
+	}
+}
