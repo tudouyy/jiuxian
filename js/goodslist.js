@@ -1,11 +1,11 @@
 $(function(){
-	//1.导航栏的h2划过显示ul
-	// $('.nav_left').hover(function(){
-	// 	$('.nav_left_ul').show();
-	// },
-	// function(){
-	// 	$('.nav_left_ul').hide();
-	// });
+	// 1.导航栏的h2划过显示ul
+	$('.nav_left').hover(function(){
+		$('.nav_left_ul').show();
+	},
+	function(){
+		$('.nav_left_ul').hide();
+	});
 	
 
 	//2.更多选项的划过
@@ -30,14 +30,14 @@ $(function(){
 	var num = parseInt($('.nums').val());
 	$(".up").click(function(){
 		num++;
-		$(".nums").val(num);
+		$(this).parent().prev().val(num);
 	});
 	$(".down").click(function(){
 		num--;
 		if(num<0){
 			num=0;
 		}
-		$(".nums").val(num);
+		$(this).parent().prev().val(num);
 	});
 
 });

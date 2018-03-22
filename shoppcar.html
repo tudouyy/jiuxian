@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopcart</title>
+	<link rel="stylesheet" href="css/shopcart.css">
+</head>
+<body>
+<!-- header -->
+<header class="clearfix">
+	<div class="header_top">
+		<div class="header_top_left left">
+			<div class="clearfix"> 
+				<a href="javascript:;">Hi 请登录</a>
+				<a href="javascript:;">免费注册</a>
+			</div>
+		</div>
+		<ul class="header_top_right right">
+			<li><a href="javascript:;">我的订单</a></li>
+			<li>|&nbsp;<a href="javascript:;">我的酒仙网</a></li>
+			<li>客服热线&nbsp;&nbsp;<strong>400-617-9999</strong></li>
+		</ul>
+	</div>
+	<div class="header_mid">
+		<div class="mid_in clearfix">
+			<div class="logo left">
+				<img src="img/pic01.png" alt="">
+			</div>
+			<div class="track right">
+				<p></p>
+				<div><span class="on">我的购物车</span><span class="on2">确认订单信息</span><span class="on3">成功提交订单</span></div>
+			</div>
+		</div>
+	</div>
+</header> 
+<!-- section -->
+<section>
+	<div class="section_top">
+		<div class="point">
+			<i class="public9"></i>
+			<span>温馨提示：自营商品实付满100元免运费，偏远地区满500免运费</span>
+		</div>
+		<div class="cart">
+			<div class="cart_tit">
+				<div class="my_cart left">
+					我的购物车<span>1</span>
+				</div>
+				<div class="addchose right">
+					<a href="javascript:;" class="select"><b>北京</b><b>北京市</b><b>东城区</b><i class="public9"></i></a>
+					<div class="div">
+						<!-- 省市联动 -->
+					</div>
+				</div>
+				<div class="myadd right">配送至</div>
+			</div>
+			<div class="cart_he">
+				<div class="one">
+					<label class="check-all"><i class="public9"></i><input type="checkbox" value=""></label>
+					<span class="checkAllText">全选</span>
+				</div>
+				<div class="two">商品信息</div>
+				<div class="three">单价</div>
+				<div class="four">送金币</div>
+				<div class="five">数量</div>
+				<div class="six">小计</div>
+				<div class="seven">操作</div>
+			</div>
+			<div class="cart_bo">
+				<div class="cart_shop">
+					<div class="one">
+						<label class="check-all"><i class="public9"></i><input type="checkbox" value=""></label>
+						<i class="public9"></i>
+					</div>
+					<div class="two left">
+						<i class="public9"></i>
+						<span>酒仙自营</span>
+					</div>
+					<div class="three">自营实付金额满<span>100元</span>包邮</div>
+				</div>
+				<div class="content">
+					<div class="goods">
+						<div class="clearfix goodslist">
+							<div class="box ones">
+								<label class="check-all"><i class="public9"></i><input type="checkbox" value=""></label>
+							</div>
+							<div class="box two clearfix">
+								<a class="imga left" href="javascript:;"><img src="img/pic99.jpg" alt=""></a>
+								<div>
+									<a href="javascript:;">38°扳倒井青花瓷700ml（6瓶装）</a>
+									<span>限时抢购</span><span>单品加价购</span>
+								</div>
+							</div>
+							<div class="box three">
+								<div class="inner priceid">￥109.00</div>
+							</div>
+							<div class="box four">
+								<div class="inner">54金币</div>
+							</div>
+							<div class="box five">
+								<div>
+									<i class="public9 i1 rduce"></i>
+									<input type="text" value="1" class="numid">
+									<i class="public9 i2 plus"></i>
+								</div>
+							</div>
+							<div class="box six">
+								<div class="inner totalid">￥109.00</div>
+							</div>
+							<div class="box seven">
+								<a href="javascript:;" class="del">删除</a>
+								<a href="javascript:;" class="move">移入我的收藏</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="goods">
+						<div class="clearfix goodslist">
+							<div class="box ones">
+								<label class="check-all"><i class="public9"></i><input type="checkbox" value=""></label>
+							</div>
+							<div class="box two clearfix">
+								<a class="imga left" href="javascript:;"><img src="img/pic100.jpg" alt=""></a>
+								<div>
+									<a href="javascript:;">澳洲红酒澳大利亚丁戈树赤霞珠干红葡萄酒750ml</a>
+									<span>限时抢购</span><span>单品加价购</span>
+								</div>
+							</div>
+							<div class="box three">
+								<div class="inner priceid">￥128.00</div>
+							</div>
+							<div class="box four">
+								<div class="inner">54金币</div>
+							</div>
+							<div class="box five">
+								<div>
+									<i class="public9 i1 rduce"></i>
+									<input type="text" value="1" class="numid">
+									<i class="public9 i2 plus"></i>
+								</div>
+							</div>
+							<div class="box six" id="cosubtotal2">
+								<div class="inner totalid">￥128.00</div>
+							</div>
+							<div class="box seven">
+								<a href="javascript:;" class="del">删除</a>
+								<a href="javascript:;" class="move">移入我的收藏</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="count">
+			<div class="coleft left">
+				<label class="check-all"><i class="public9"></i><input type="checkbox" value=""><span class="checkAllText">全选</span></label>
+				<a href="javascript:;" id="delChecked">删除选中商品</a>
+				<a href="javascript:;" id="delFail">清除失效商品</a>
+				<a href="javascript:;" id="delToCollect">移入我的收藏</a>
+			</div>
+			<div class="comid right">
+				<div class="top">
+					<span class="pieces">已选商品<em class="numids">0</em>件</span>
+					<span class="total">总价（不含运费）：<em class="amount">￥0.00</em></span>
+				</div>
+				<div class="bot">
+					<span>活动优惠：<em>￥0.00</em></span>
+					<span>赠送金币：<em>0</em>个</span>
+				</div>
+			</div>
+			<div class="coright">
+				<a href="javascript:;" class="done">去结算</a>
+			</div>
+		</div>
+	</div>
+	<div class="section_bot"></div>
+</section>
+<!-- foooter --> 
+<footer class="clearfix">
+	<div class="footer_in">
+		<div class="top">
+			<div class="cont">
+				<div class="t_left left">
+					<i class="public t"></i><b>400-617-9999</b><span>客服热线</span><span>9:00-23:00</span><span>贴心服务</span>
+				</div>
+				<div class="t_right right">
+					<span>优惠促销早知道</span>
+					<p>
+						<input type="text" placeholder="请输入您的邮箱地址"/>
+						<i class="public i"></i>
+					</p>
+				</div>
+			</div>
+			<div class="conb">
+				<ul>
+					<li>
+						<h3><i class="public p p1"></i><span>新手入门</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li>
+						<h3><i class="public p p2"></i><span>常见问题</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li>
+						<h3><i class="public p p3"></i><span>配送说明</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li>
+						<h3><i class="public p p4"></i><span>支付方式</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li>
+						<h3><i class="public p p5"></i><span>售后服务</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li>
+						<h3><i class="public p p6"></i><span>特色服务</span></h3>
+						<p><a href="javascript:;">购物保障</a></p>
+						<p><a href="javascript:;">服务协议</a></p>
+						<p><a href="javascript:;">发票说明</a></p>
+					</li>
+					<li class="last">
+						<div>
+							<a href="javascript:;"><i class="public x x1"></i><span>酒仙新浪微博</span></a>
+						</div>
+						<div>
+							<a href="javascript:;"><i class="public x x2"></i><span class="chanspan">酒仙微信</span></a>
+							<div class="wechat">
+								<img src="img/weixin-code.jpg" alt="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bot">
+			<div class="botl left">
+				<p class="pone">
+					<a href="javascript:;">公司简介</a>
+					|
+					<a href="javascript:;">管理团队</a>
+					|
+					<a href="javascript:;">媒体报道</a>
+					|
+					<a href="javascript:;">公司简介</a>
+					|
+					<a href="javascript:;">公司简介</a>
+					|
+					<a href="javascript:;">公司简介</a>
+					|
+					<a href="javascript:;">公司简介</a>
+					|
+					<a href="javascript:;">公司简介</a>
+				</p>
+				<p class="pone">
+					北京酒仙网络科技有限公司&nbsp;&nbsp;©&nbsp;&nbsp;酒仙网&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;jiuxian.com&nbsp;&nbsp;All&nbsp;&nbsp;&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;&nbsp;
+					<a href="javascript:;">京ICP备17043395号</a>
+					&nbsp;&nbsp;&nbsp;京公网安备1101050188221
+				</p>
+				<p class="ptwo">
+					<a href="javascript:;">大麦网</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">铁血军事</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">酒仙网白酒</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">酒仙网葡萄酒</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">开放平台招商</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">购酒论坛</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">名鞋库</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">酒仙网团购</a>
+					<a href="javascript:;">|</a>
+					<a href="javascript:;">更多</a>
+				</p>
+				<p class="ptwo two">
+					统一社会信用代码&nbsp;&nbsp;91110302306646672B&nbsp;&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;JY11131010328793&nbsp;&nbsp;&nbsp;
+				</p>
+				<p class="ptwo two">
+					地址：北京市北京经济技术开发区经海五路58号院8幢4层
+				</p>
+				<p class="pthree">
+					<a href="javascript:;"><img src="img/pic05.png" alt=""></a>
+					<a href="javascript:;"><img src="img/pic26.jpg" alt=""></a>
+					<a href="javascript:;"><img src="img/pic27.jpg" alt=""></a>
+					<a href="javascript:;"><img src="img/pic28.jpg" alt=""></a>
+					<a href="javascript:;"><img src="img/pic06.png" alt=""></a>
+				</p>
+				<p class="ptwo two four">
+					<span>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</span>
+				</p>
+			</div>
+			<div class="botr left">
+				<div>
+					<img src="img/phoe_img.jpg" alt="">
+					手机酒仙网
+				</div>
+				<div>
+					<img src="img/code.jpg" alt="">
+					酒快到
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+<script src='js/jquery.1.8.3.js'></script>
+<script src="js/common.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src='js/shopcart.js'></script>

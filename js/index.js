@@ -104,21 +104,63 @@ function goImg(transOrd){
 		$(this).toggleClass('a_active');
 	});
 	//9.右侧轮播图
-		//  new Carousel({
-		// 	el: document.querySelector('#carousel1'),
-		// 	timeout: 3000,
-		// 	isAuto: true,
-		// 	isDots: true,
-		// 	isXhx: false,
-		// 	isClick:true
-		// });
-		//  new Carousel({
-		// 	el: document.querySelector('#carousel2'),
-		// 	isAuto: false,
-		// 	isDots: false,
-		// 	isXhx: false,
-		// 	isClick:true
-		// });
+		 new Carousel({
+			el: document.querySelector('#carousel1'),
+			timeout: 3000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		 new Carousel({
+			el: document.querySelector('#carousel2'),
+			timeout: 3000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		 new Carousel({
+			el: document.querySelector('#carousel3'),
+			timeout: 2000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		  new Carousel({
+			el: document.querySelector('#carousel4'),
+			timeout: 2000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		  new Carousel({
+			el: document.querySelector('#carousel5'),
+			timeout: 2000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		  new Carousel({
+			el: document.querySelector('#carousel6'),
+			timeout:2000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+		   new Carousel({
+			el: document.querySelector('#carousel7'),
+			timeout:2000,
+			isAuto: true,
+			isDots: true,
+			isXhx: false,
+			isClick:false
+		});
+
 	//10.限时秒杀滚动图
 	$('.diecr d1').click(function(){
 		$('seckill_div ul').animate(function(){});

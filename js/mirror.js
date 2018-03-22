@@ -17,7 +17,7 @@ var oBox       =$('box');
 aSmallImg.forEach(v =>{//v:每次遍历asmallImg数组的元素的值  
 	v.onmouseover=function(){
 		//去掉所有的class名
-		aSmallImg.forEach(v => v.className='');//给每一个元素都添加去掉class名    
+		aSmallImg.forEach(v => v.className='');
 		// 当前img添加class
 		this.className='active';
 		//同步中图的路径
@@ -47,7 +47,7 @@ oMiddleBox.onmouseover=function(){
 	maxL=oMiddleBox.offsetWidth-oShadow.offsetWidth;
 	maxT=oMiddleBox.offsetHeight-oShadow.offsetHeight;
 
-// 大图片最大的left和top值        :这个感觉不需要也可以，没有想通（词句用法同上P50）
+// 大图片最大的left和top值
 	maxLargeImgL = oLargeImg.offsetWidth - oLargeBox.offsetWidth;
 	maxLargeImgT = oLargeImg.offsetHeight - oLargeBox.offsetHeight;
 }
@@ -63,7 +63,8 @@ oMiddleBox.onmousemove =function(ev){
 	var e=ev||window.event;
 	var iL = e.clientX - oShadow.offsetWidth /2  - oBox.offsetLeft - oMiddleBox.offsetLeft;
 	var iT  =e.clientY - oShadow.offsetHeight /2  - oBox.offsetTop  - oMiddleBox.offsetTop;
-
+	
+	
 	//左侧边界值
 	if(iL<0){
 		iL=0;
@@ -82,7 +83,6 @@ oMiddleBox.onmousemove =function(ev){
 	}
 	oShadow.style.left=iL+'px';
 	oShadow.style.top=iT+'px';
-
 	//大图
 	oLargeImg.style.left=-2*iL+'px';
 	oLargeImg.style.top=-2*iT+'px';

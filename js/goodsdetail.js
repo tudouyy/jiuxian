@@ -1,11 +1,11 @@
 $(function(){
-	//1.导航栏的h2划过显示ul
-	// $('.nav_left').hover(function(){
-	// 	$('.nav_left_ul').show();
-	// },
-	// function(){
-	// 	$('.nav_left_ul').hide();
-	// });
+	// 1.导航栏的h2划过显示ul
+	$('.nav_left').hover(function(){
+		$('.nav_left_ul').show();
+	},
+	function(){
+		$('.nav_left_ul').hide();
+	});
 
 
 	//2.点击向上增加数量，向下数量递减

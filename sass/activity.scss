@@ -42,3 +42,150 @@ span{
     height: 8px; 
     background-position: -99px 3px;
 }
+
+header{
+	background:#fff;
+	.header_top{
+		background: #f2f2f2;
+	}
+}
+section{
+	 width:100%;
+	 background: #990000;
+	.content{
+		width:100%;
+		background: rgb(253, 240, 224);
+		.cont{
+			width: 1920px;
+			text-algin:center; 
+		    margin-bottom: 10px;
+		    margin-left: -328.5px;
+	        overflow: hidden;
+	        background: rgb(253, 240, 224);
+			img{
+				display:block;
+				width:1920px;
+			}
+		}
+		.contw{
+		    width: 990px;
+		    height:40px;
+		    margin-bottom: 10px;
+		    margin: 0 auto;
+    		overflow: hidden;
+    		.divs{
+    			width: 580px;
+			    height: 380px;
+			    padding: 10px;
+			    background-color: #fff;
+			    border: 2px solid #000;
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    margin-top: -200px;
+			    margin-left: -300px;
+			    z-index: 10001;
+			    display: none;
+			    overflow-x: hidden;
+			    overflow-y: scroll;
+			    span{
+			    	display: block;
+				    font-size: 20px;
+				    color: #000;
+				    text-align: right;
+				    float: right;
+				    cursor: pointer;
+			    }
+			    h4{
+			    	font-size: 16px;
+				    text-align: center;
+				    line-height: 50px;
+				    margin-bottom: 10px;
+				    color: #000;
+			    }
+			    p{
+			    	line-height: 20px;
+				    font-size: 14px;
+				    color: #555;
+			    }
+    		}
+    		.lian{
+    			width: 990px;
+		    	height:30px;
+    			text-algin:center;
+    			img{
+    				display:block;
+    				width: 990px;
+		    		height:30px;
+    			}
+    		}
+		}
+		.contth{
+			width: 990px;
+		    margin: 0 auto;
+		    overflow: hidden;
+		    margin-bottom:10px;
+		    img{
+		    	width:472px;
+		    	height:204px;
+		    	display:block;
+		    	float:left;
+		    }
+		    .outbox{
+		    	width:240px;
+		    	float: left;
+			    display: inline;
+			    margin: 0 10px 10px 0;
+			    .img{
+			    	display:block;
+					width:240px;
+					height:241px;
+					border-bottom: 1px dashed #bbb;
+					background: #fff;
+					text-align: center;
+					img{
+						display:block;
+						width:240px;
+					}
+			    }
+			    .inbox{
+					background: #f6f6f6;
+					width: 90%;
+				    height: 75px;
+				    padding: 11px 5% 12px;
+				    .wordba{
+			    	    color: #333;
+				    }
+				    .word{
+				    	color: #666;
+				    }
+				    .price{
+				    	height: 26px;
+					    line-height: 26px;
+					    padding-top: 10px;
+					    span{
+					    	color: #f99a1d;
+					    	em{
+					    		font-style: normal;
+								font-size: 26px;
+					    	}
+					    }
+					    a{
+					    	float: right;
+						    height: 26px;
+						    line-height: 26px;
+						    padding: 0 10px;
+						    font-size: 13px;
+						    color: #fff;
+						    border-radius: 3px;
+							background: url(../img/bg08.jpg) repeat-x left center;
+					    }
+				    }
+				}
+		    }
+		    .ri{
+		    	margin-right:0;
+		    }
+		}
+	}
+}

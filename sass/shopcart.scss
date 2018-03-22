@@ -1,0 +1,583 @@
+@charset "utf-8"; 
+@import "common";
+@import "header";
+@import "footer";
+body {
+    color: #666;
+    min-width: 1000px;
+    font-size: 12px;
+    display: block;
+}
+strong,b{
+    font-weight: bold;
+}
+input{
+	vertical-align: middle;
+    outline: none;
+}
+.a_active{
+	color: #cc0001 !important; 
+    text-decoration: underline;
+}
+
+//小图标背景图
+.public{
+	display:inline-block;
+	background:url(../img/public.png) no-repeat;
+}
+.public9{
+	display:inline-block;
+	background:url(../img/public9.png) no-repeat;
+}
+//小图标中的三角
+.s{
+	display:inline-block;
+	width: 9px;
+    height: 8px; 
+    background-position: -99px 3px;
+}
+
+// header
+header{
+	.header_top{
+		width:1000px;
+		.header_top_right{
+			li{
+				a{
+				    color: #666;
+				}
+				strong{
+					color: #ca1926;
+				    font-style: italic;
+				    font-size: 16px;
+				    position: relative;
+				    top: 2px;
+				    padding-left: 5px;
+				}
+			}
+		}
+	}
+	.header_mid{
+		background: #fff;
+	    height: 90px;
+	    width: 100%;
+	    .mid_in{
+	    	height: 90px;
+		    margin: 0 auto;
+		    position: relative;
+		    width: 1000px;
+		    z-index: 102;
+		    .logo{
+		    	height: 63px;
+			    margin-top: 20px;
+			    width: 257px;
+			    img{
+			    	display:block;
+			    }
+		    }
+		    .track{
+		    	margin-top: 25px;
+
+		    	p{
+		    		width: 396px;
+				    height: 27px;
+				    background: url(../img/bg04.png) no-repeat;
+				    margin: 0 26px 0 16px;
+		    	}
+		    	div{
+		    		width: 438px;
+				    height: 16px;
+				    line-height: 16px;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    margin-top: 8px;
+				    span{
+				    	color: #aaa;
+    					margin-right: 117px;
+				    }
+				    .on{
+				    	color: #666;
+				    }
+		    	}
+		    }
+	    }
+	}
+}
+// section
+section{
+	width: 1000px;
+    margin: 30px auto 0;
+    background:#fff;
+    .section_top{
+		.point{
+			height: 34px;
+		    line-height: 34px;
+		    font-size: 0;
+		    background: #fffcf8;
+		    border: 1px solid #ffdeb0;
+		    padding: 0 20px;
+		    margin-bottom: 20px;
+		    i{
+		    	background-position: 0 -20px;
+			    width: 13px;
+			    height: 18px;
+			    margin-right: 10px;
+			    display: inline-block;
+    			vertical-align: middle;
+		    }
+		    span{
+	    	    font-size: 12px;
+				color: #666666;
+				display: inline-block;
+				vertical-align: middle;
+		    }
+		}
+		.cart{
+			width: 100%;
+			.cart_tit{
+				width: 100%;
+    			height: 34px;
+    			.my_cart{
+    				float: left;
+				    font-weight: bolder;
+				    color: #333;
+				    font-size: 14px;
+				    line-height: 34px;
+				    span{
+				    	margin-left: 10px;
+					    position: relative;
+					    top: 1px;
+				    }
+    			}
+    			.addchose{
+					position: relative;
+				    height: 24px;
+				    margin: 0px 0px 0px 10px;
+				    .select{
+				    	float: left;
+					    color: #666;
+					    position: relative;
+					    line-height: 22px;
+					    height: 22px;
+					    font-size: 12px;
+					    border: 1px solid #cacaca;
+					    display: inline-block;
+					    background: #fff;
+					    padding-left: 12px;
+					    b{
+					    	float: left;
+						    font-weight: normal;
+						    padding-right: 6px;
+						    color: #666;
+					    }
+					    i{
+					    	float: left;
+						    width: 9px;
+						    height: 5px;
+						    background-position: 0 0;
+						    vertical-align: middle;
+						    margin: 9px 5px 0 0;
+					    }
+				    }
+				    .div{
+				    	padding: 10px;
+					    width: 340px;
+					    position: absolute;
+					    right: 0;
+					    top: 22px;
+					    border: 1px solid #cacaca;
+					    box-shadow: 0 0 5px -1px #ccc;
+					    background: #fff;
+					    z-index:3;
+					    display: none;
+				    }
+    			}
+    			.myadd{
+				    height: 24px;
+				    line-height: 24px;
+				    color: #666;
+    			}
+
+			}
+			.cart_he{
+				height: 38px;
+			    line-height: 38px;
+			    border: 1px solid #e8e8e8;
+			    div{
+			    	float: left;
+				    color: #999;
+				    text-align: center;
+				    min-height: 18px;
+			    }
+			    .one{
+		    	    position: relative;
+		    	    margin: 0 0 0 20px;
+		    	    width: 24px;
+					height: 15px;
+					label{
+						display: block;
+					    width: 24px;
+					    margin-top: 4px;
+					    cursor: pointer;
+					    i{
+					    	width: 15px;
+						    height: 15px;
+						    background-position: -17px -58px;
+						    margin-right: 10px;
+					    }
+					    input{
+					    	position: absolute;
+						    left: 0;
+						    top: 0;
+						    z-index: 0;
+						    display: none;
+					    }
+					}
+					span{
+						font-size: 12px;
+					    color: #333;
+					    position: absolute;
+					    left: 24px;
+					    top: 0;
+					    width: 50px;
+					    text-align: left;
+					}
+			    }
+			    .two{
+			    	width: 300px;
+				    float: left;
+				    color: #999999;
+				    text-indent: 93px;
+				    text-align: left;
+			    }
+			    .three{
+			    	width: 166px;
+			    }
+			    .four{
+			    	width: 114px;
+			    }
+			    .five{
+			    	width: 132px;
+			    }
+			    .six{
+			    	width: 140px;
+			    }
+			    .seven{
+		    	    width: 102px;
+				    text-align: left;
+			    }
+			}
+			.cart_bo{
+				margin-top: 12px;
+				.cart_shop{
+					border: 1px solid #fff;
+				    height: 38px;
+				    line-height: 38px;
+				    .one{
+			    	    float: left;
+					    color: #999;
+					    text-align: center;
+					    min-height: 18px;
+					    margin:0 0 0 20px;
+					    height:38px;
+						label{
+							display: block;
+						    width: 24px;
+						    margin-top: 4px;
+						    cursor: pointer;
+						    i{
+						    	width: 15px;
+							    height: 15px;
+							    background-position: -17px -58px;
+							    margin-right: 10px;
+						    }
+						    input{
+						    	position: absolute;
+							    left: 0;
+							    top: 0;
+							    z-index: 0;
+							    display: none;
+						    }
+						}
+				    }
+				    .two{
+				    	i{
+			    		    background-position: -72px 0;
+			    		    width: 16px;
+						    height: 16px;
+						    margin-right: 6px;
+						    display: inline-block;
+    						vertical-align: middle;
+				    	}
+				    	span{
+			    		    font-size: 12px;
+							color: #333; 
+							display: inline-block;
+    						vertical-align: middle;
+				    	}
+				    }
+				    .three{
+				    	float: right;
+    					color: #666666;
+    					span{
+    						color: #e6393d;
+    					}
+				    }
+				}
+				.content{
+					border-top: 2px solid #b7b7b7;
+				    border-right: 1px solid #e8e8e8;
+				    border-left: 1px solid #e8e8e8;
+				    .goods{
+				    	border-bottom: 1px solid #e8e8e8;
+    					padding: 20px 0;
+    					.goodslist{
+    						.box{
+								float: left;
+							    color: #999;
+							    text-align: center;
+							    .inner{
+							    	color: #333;
+								    height: 18px;
+								    line-height: 18px;
+							    }
+    						}
+    						.ones{
+    							position: relative;
+							    margin: 0 0 0 20px;
+							    width: 24px;
+							    height: 15px;
+							    label{
+									display: block;
+								    width: 24px;
+								    margin-top: 4px;
+								    cursor: pointer;
+								    i{
+								    	width: 15px;
+									    height: 15px;
+									    background-position: -17px -58px;
+									    margin-right: 10px;
+								    }
+								    input{
+								    	position: absolute;
+									    left: 0;
+									    top: 0;
+									    z-index: 0;
+									    display: none;
+								    }
+								}
+    						}
+    						.two{
+    							width: 300px;
+							   .imga{
+							   		display:block;
+							   		float:left;
+							   		width:80px;
+							   		height:80px;
+							   		img{
+							   			display:block;
+								   		width:80px;
+								   		height:80px;
+							   		}
+							   }
+							   div{
+							   		width:200px;
+									height:80px;
+									float:left;
+									margin-left:10px;
+									text-align:left;
+									a{
+										display:block;
+										width:200px;
+										height:36px;
+										line-height:18px;
+										color: #333;
+									}
+									span{
+										display: block;
+										float:left;
+										border: 1px solid #e6393d;
+									    padding: 0 4px;
+									    color: #e6393d;
+								        margin-right: 5px;   
+								        margin-bottom: 3px;
+									}
+							   }
+    						}
+    						.three{
+    							width: 166px;
+    						}
+    						.four{
+    							width: 114px;
+    						}
+    						.five{
+    							width: 132px;
+    							div{
+    								width: 78px;
+								    height: 20px;
+								    border: 1px solid #d0d0d0;
+								    background: #fff;
+								    margin: 0 auto;
+								    position: relative;
+								    top: -2px;
+    								i{
+	    								display: inline-block;
+									    width: 17px;
+									    height: 20px;
+    								}
+    							.i1{
+    								background-position: -15px -94px;
+								    border-right: 1px solid #d0d0d0;
+								    // cursor: not-allowed;//禁用点击
+								    float: left;
+    							}
+    							.i2{
+    								background-position: -34px -94px;
+								    border-left: 1px solid #d0d0d0;
+								    cursor: pointer;
+								    float: left;
+    							}
+    							input{
+    								width: 42px;
+								    height: 18px;
+								    line-height: 20px;
+								    display: inline-block;
+								    float: left;
+								    border: none;
+								    text-align:center;
+								    color: #333;
+   									font-size: 12px;
+   									vertical-align:middle;
+    							}
+    							}
+    						}
+    						.six{
+							    width: 140px;
+    						}
+    						.seven{
+    							width: 102px;
+							    text-align: left;
+							    a{
+							    	display:block;
+							    	width: 102px;
+							    	height: 18px;
+							    	color: #666;
+							    }
+							    .move{
+							    	margin-top:5px;
+							    }
+
+    						}
+
+    					}
+				    }
+				}
+			}
+		}
+		.count{
+			height: 60px;
+		    background: #f8f8f8;
+		    border: 1px solid #e8e8e8;
+		    width: 978px;
+		    margin-top: 20px;
+		    padding-left: 20px;
+		    position: relative;
+		    .coleft{
+		    	height: 60px;
+		    	label{
+		    		float: left;
+	    		    line-height: 60px;
+	    		    margin-right: 20px;
+		    		i{
+		    			width: 15px;
+					    height: 15px;
+					    background-position: 0 -58px;//无勾选
+				        background-position: -17px -58px;
+					    margin-right: 10px;
+					    vertical-align: middle;
+		    		}
+		    		input{
+		    			display: none;
+		    		}
+		    		span{
+		    			font-size: 12px;
+    					color: #333;
+		    		}
+		    	}
+		    	a{
+		    		display:block;
+		    		color: #333;
+				    margin-right: 20px;
+			        float: left;
+				    line-height: 60px
+		    	}
+		    }
+		    .comid{
+			    margin-right: 150px;
+			    padding: 5px 0;
+			    height: 50px;
+			    .top{
+		    	    text-align: right;
+				    height: 25px;
+				    line-height: 25px;
+				    span{
+			    	    color: #333;
+				    }
+		    	    .pieces{
+		    	    	margin-right: 25px;
+		    	    	em{
+		    	    		color: #e43a3d;
+						    font-style: normal;
+						    font-size: 16px;
+						    margin: 0 5px;
+		    	    	}
+		    	    }
+		    	    .total{
+						em{
+							color: #f32828;
+						    font-style: normal;
+						    font-size: 20px;
+						}
+		    	    }
+			    }
+			    .bot{
+			    	text-align: right;
+				    height: 25px;
+				    line-height: 25px;
+				    color: #999;
+				    span{
+				    	margin-left: 20px;
+				    	em{
+				    		font-style: normal;
+				    	}
+				    }
+			    }
+		    }
+		    .coright{
+		    	width: 120px;
+			    height: 62px;
+			    position: absolute;
+			    top: -1px;
+			    right: -1px;
+			    z-index: 100;
+			    .done{
+			    	display:block;
+			    	width: 120px;
+				    height: 62px;
+				    background: #d0d0d0;//无选中商品
+			        background: #e43a3d;
+				    color: #fff;
+				    text-align: center;
+				    line-height: 62px;
+				    font-size: 18px;
+				    font-weight: bold;
+				    text-decoration: none;
+			    }
+		    }
+		}
+    }
+    .section_bot{
+    	width: 1000px;
+    	margin: 24px 0 40px;
+    }
+}

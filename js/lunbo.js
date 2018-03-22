@@ -83,7 +83,7 @@ class Carousel{
 		if(this.isClick){
 			//给左侧按钮添加点击事件
 			let prev = this.el.getElementsByClassName('prev')[0];
-			prev.onclick = () =>{
+			prev.onclick =() =>{
 				this.leftMove();
 			}
 			//给右侧按钮添加点击事件
